@@ -1,0 +1,48 @@
+ @font-face { font-family: Delicious; src: url('/public/font/Occupied.otf'); } 
+ @font-face { font-family: Delicious; font-weight: bold; src: url('/public/font/Occupied.otf');}
+
+body {
+  background-image: url("/images/Digital Water.jpg");
+  font-family: Occupied; 
+}
+
+.jumbotron {
+   background-image: url("/images/Digital Water.jpg"); 
+}
+
+.card {
+    -webkit-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+      -moz-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+      box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+}
+
+.navbar-brand:hover{
+	color:#cc6aff;
+	border-bottom:2px solid #0ad8eb;
+	transition:all 0.5s ease-in;
+	padding:10px;	
+}
+
+li :hover
+{
+	color:#41f18d;
+	transition:all 0.5s ease-in;
+	padding:10px;
+}
+
+li a:hover
+{
+	color:#41f18d;
+	border-bottom:2px solid #41f18d;
+	transition:all 0.5s ease-in;
+	padding:10px;
+}
+
+.text-vcenter :hover {
+	color: #0ad8eb;
+	transition:all 0.7s ease-in;
+}
+
+p {
+    margin-top: 20px;
+}

@@ -1,0 +1,46 @@
+var dotenv     = require('dotenv').config(),
+    express = require('express'),
+    app     = express(),
+    bodyParser = require('body-parser'),
+    nodemailer = require("nodemailer"),
+    request    = require("request"),
+    flash      = require("connect-flash"),
+    cookieParser = require("cookie-parser"),
+    router     = express.Router(),
+    session = require("express-session"),
+    contactRoutes = require("./routes/contact"),
+    serveStatic = require('serve-static');
+
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+app.use(cookieParser());
+app.use(flash());
+
+
+ 
+app.set('view engine', 'ejs');
+
+app.use("/", router);
+
+app.use(express.static('public/'));
+
+
+app.get('/', function(req, res){
+    res.render('cpg');
+});
+
+/*
+app.get('/contact', function(req, res){
+    console.log("EFM: Hello World");
+    res.render('contact');
+});
+*/
+
+app.get('/pricing', function(req, res){
+    res.render('pricing');
+});
+
+app.use("/contact", contactRoutes);
+
+app.listen(process.env.PORT, process.env.IP);
+

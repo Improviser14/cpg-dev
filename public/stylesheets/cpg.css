@@ -1,0 +1,277 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ @font-face { font-family: Delicious; src: url('/public/font/Occupied.otf'); } 
+ @font-face { font-family: Delicious; font-weight: bold; src: url('/public/font/Occupied.otf');}
+
+body {
+  background-image: url("/images/Portrait.jpg");
+  font-family: Occupied; 
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+/* additional sections */
+#home {
+  background-image: url("/images/zinc.jpg");
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+  box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+}
+
+.navbar-brand:hover{
+	color:#cc6aff;
+	border-bottom:2px solid #0ad8eb;
+	transition:all 0.5s ease-in;
+	padding:10px;	
+}
+
+.text-vcenter :hover {
+	color: #0ad8eb;
+	transition:all 0.7s ease-in;
+}
+
+.nav li a:hover {
+	color:#0ad8eb;
+	background-color: inherit;
+	border-bottom:2px solid #0ad8eb;
+	transition:all 0.5s ease-in;
+	padding:10px;
+}
+
+.display-1 {
+	font-size: 70px;
+	color: #fff;
+}
+
+.display-1:hover {
+	font-size: 85px;
+	color: #0ad8eb;
+	transition:all 0.5s ease-in;
+}
+
+li :hover
+{
+	color:#41f18d;
+	transition:all 0.5s ease-in;
+	padding:10px;
+}
+
+li a:hover
+{
+	color:#41f18d;
+	border-bottom:2px solid #41f18d;
+	transition:all 0.5s ease-in;
+	padding:10px;
+}
+
+
+.text-center:hover {
+	font-size: 35px;
+	color: #0ad8eb;
+	transition:all 0.5s ease-in;
+}
+
+#about {
+  background: url(https://images.unsplash.com/photo-1540827495644-90aaf36f1540?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=31e229e10295f5eba0d521f0853855b2&auto=format&fit=crop&w=668&q=80) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#services {
+  background: url(https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1296a4419a6c84e28281db0a564071ef&auto=format&fit=crop&w=800&q=60) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#information {
+  background: url(https://images.unsplash.com/photo-1508782481636-fa17b04a578f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0fa734bc92f654f1660eeeef70606129&auto=format&fit=crop&w=800&q=60) no-repeat center center fixed;
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#information .panel {
+  opacity: 0.85;
+}
+
+.cell img {
+  -webkit-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+  box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+ a:hover {
+  font-size: 20px;
+  color: #0ad8eb;
+	transition:all 0.7s ease-in;
+}
+
+/*.cell img {*/
+/*  display: block;*/
+/*}*/
+
+/*.card img {*/
+/*  display: block;*/
+/*}*/
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 100%;
+  }
+}
+
+.cell {
+  margin: 1rem;
+}
+
+
+
+/*.myImg {*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+.myImg:hover {opacity: 0.7;}
+
+ /*The Modal (background) */
+.modal {
+    display: none; /* Hidden by default 
+    position: fixed; /* Stay in place 
+    z-index: 1; /* Sit on top 
+    padding-top: 100px; /* Location of the box 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width 
+    height: 100%; /* Full height 
+    overflow: auto; /* Enable scroll if needed 
+    background-color: rgb(0,0,0); /* Fallback color 
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity 
+}
+
+/* Modal Content (image) */
+/*.modal-content {*/
+/*    margin: auto;*/
+/*    display: block;*/
+/*    width: 80%;*/
+/*    max-width: 700px;*/
+/*}*/
+
+/* Caption of Modal Image */
+/*#caption {*/
+/*    margin: auto;*/
+/*    display: block;*/
+/*    width: 80%;*/
+/*    max-width: 700px;*/
+/*    text-align: center;*/
+/*    color: #ccc;*/
+/*    padding: 10px 0;*/
+/*    height: 150px;*/
+/*}*/
+
+/* Add Animation */
+/*.modal-content, #caption {    */
+/*    -webkit-animation-name: zoom;*/
+/*    -webkit-animation-duration: 0.6s;*/
+/*    animation-name: zoom;*/
+/*    animation-duration: 0.6s;*/
+/*}*/
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+/*.close {*/
+/*    position: absolute;*/
+/*    top: 15px;*/
+/*    right: 35px;*/
+/*    color: #f1f1f1;*/
+/*    font-size: 40px;*/
+/*    font-weight: bold;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+/*.close:hover,*/
+/*.close:focus {*/
+/*    color: #bbb;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+h4 {
+  text-align: center;
+}
+
+
+
