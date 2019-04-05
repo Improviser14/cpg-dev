@@ -43,7 +43,7 @@ router.post("/send", function(req, res) {
             auth: {
               user: 'pavance40@gmail.com',
               //must go to https://myaccount.google.com/apppasswords then paste the generated password here or transporter will not work
-              pass: process.env.GMAILPW1
+              pass: "rwquuwwxbhhovgfq"
 
             }
         });
