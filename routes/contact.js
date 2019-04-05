@@ -3,8 +3,8 @@ var dotenv     = require('dotenv').config(),
     nodemailer = require("nodemailer"),
     request    = require("request"),
     router     = express.Router(),
-    smtpTransport = require('nodemailer-smtp-transport');
-    // flash      = require("connect-flash");
+    smtpTransport = require('nodemailer-smtp-transport'),
+    flash      = require("connect-flash");
 
 // contact form
 router.get("/", function(req, res) {
@@ -43,6 +43,7 @@ router.post("/send", function(req, res) {
             auth: {
               user: 'pavance40@gmail.com',
               //must go to https://myaccount.google.com/apppasswords then paste the generated password here or transporter will not work
+              // google password needs to be hard-coded. Won't connect to .env file
               pass: "rwquuwwxbhhovgfq"
 
             }
