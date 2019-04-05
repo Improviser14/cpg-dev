@@ -45,6 +45,7 @@ app.get('/pricing', function(req, res){
 
 app.use("/contact", contactRoutes);
  
+app.use(flash());
 
 app.listen(process.env.PORT, process.env.IP);
 
