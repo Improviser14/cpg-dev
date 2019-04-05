@@ -1,5 +1,7 @@
 var dotenv     = require('dotenv').config(),
     express = require('express'),
+    // liveServer = require("live-server"),
+    // particlesJS = require("particles.js"),
     app     = express(),
     bodyParser = require('body-parser'),
     nodemailer = require("nodemailer"),
@@ -10,14 +12,19 @@ var dotenv     = require('dotenv').config(),
     session = require("express-session"),
     contactRoutes = require("./routes/contact"),
     serveStatic = require('serve-static');
+    
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(flash());
 
+//  particlesJS.load('particles-js', '/particles.json', function() {
+//   console.log('callback - particles.js config loaded');
+//  });
 
- 
+
+
 app.set('view engine', 'ejs');
 
 app.use("/", router);
@@ -29,18 +36,12 @@ app.get('/', function(req, res){
     res.render('cpg');
 });
 
-/*
-app.get('/contact', function(req, res){
-    console.log("EFM: Hello World");
-    res.render('contact');
-});
-*/
-
 app.get('/pricing', function(req, res){
     res.render('pricing');
 });
 
 app.use("/contact", contactRoutes);
+
 
 app.listen(process.env.PORT, process.env.IP);
 

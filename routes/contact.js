@@ -24,7 +24,7 @@ router.post("/send", function(req, res) {
     // secret key
     var secretKey = process.env.RECAPTCHA_API_SECRET;
     // Verify URL
-    var verifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_API_SITEKEY}&response=${captcha}&remoteip=${req
+    var verifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_API_SECRET}&response=${captcha}&remoteip=${req
       .connection.remoteAddress}`;
     // Make request to Verify URL
     request.get(verifyURL, (err, response, body) => {

@@ -18,8 +18,10 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "express-static": "^1.2.6",
+    "live-server": "^1.2.1",
     "nodemailer": "^4.7.0",
     "nodemailer-smtp-transport": "^2.7.4",
+    "particles.js": "^2.0.0",
     "request": "^2.88.0",
     "serve-static": "^1.13.2",
     "session": "^0.1.0"
