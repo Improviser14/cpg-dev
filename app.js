@@ -31,6 +31,9 @@ app.use("/", router);
 
 app.use(express.static('public/'));
 
+app.get('/contact', function(req, res){
+    res.render('contact');
+});
 
 app.get('/', function(req, res){
     res.render('cpg');
@@ -41,7 +44,7 @@ app.get('/pricing', function(req, res){
 });
 
 app.use("/contact", contactRoutes);
-
+ 
 
 app.listen(process.env.PORT, process.env.IP);
 
