@@ -3,7 +3,7 @@ var dotenv     = require('dotenv').config(),
     nodemailer = require("nodemailer"),
     request    = require("request"),
     router     = express.Router();
-    // smtpTransport = require('nodemailer-smtp-transport');
+    smtpTransport = require('nodemailer-smtp-transport');
     // flash      = require("connect-flash");
 
 // contact form
@@ -37,7 +37,7 @@ router.post("/send", function(req, res) {
         return res.redirect("/contact");
       }});
       
-        // var smtpTransport = require('nodemailer-smtp-transport');
+        var smtpTransport = require('nodemailer-smtp-transport');
         let transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
