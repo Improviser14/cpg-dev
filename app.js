@@ -6,10 +6,10 @@ var dotenv     = require('dotenv').config(),
     bodyParser = require('body-parser'),
     nodemailer = require("nodemailer"),
     request    = require("request"),
-    flash      = require("connect-flash"),
     cookieParser = require("cookie-parser"),
     router     = express.Router(),
     session = require("express-session"),
+    flash      = require("connect-flash"),
     contactRoutes = require("./routes/contact"),
     serveStatic = require('serve-static');
     
