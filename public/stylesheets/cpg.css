@@ -2,11 +2,17 @@
 html, body {
   height: 100%;
   width: 100%;
+  /* margin: 0;*/
+  /*padding: 0;*/
 }
 
 body {
   background-image: url("/images/Portrait.jpg");
   font-family: Occupied,Arial,sans-seriff;
+}
+
+h3{
+  color: white;
 }
 
  
@@ -32,6 +38,14 @@ body {
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 #large-header {
@@ -89,7 +103,7 @@ body {
 }
 /* additional sections */
 #home {
-  background-image: url("/images/zinc.jpg");
+  background-image: url("http://cdn.eso.org/images/screen/eso1049a.jpg");
   display: table;
   height: 100%;
   position: relative;
