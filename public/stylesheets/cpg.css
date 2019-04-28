@@ -13,6 +13,8 @@ body {
 
 h3{
   color: white;
+  z-index: 2;
+  /*margin-top:80px;*/
 }
 
  
@@ -119,22 +121,21 @@ h3{
 
 .navbar-brand:hover{
 	color:#cc6aff;
-	border-bottom:2px solid #0ad8eb;
+	border-bottom:2px solid #00bfff;
 	transition:all 0.5s ease-in;
 	padding:10px;	
 }
 
 .text-vcenter :hover {
-	color: #0ad8eb;
+	color: #00bfff;
 	transition:all 0.7s ease-in;
 }
 
 .nav li a:hover {
-	color:#0ad8eb;
-	background-color: inherit;
-	border-bottom:2px solid #0ad8eb;
+  color:#00bfff;
+	border-bottom:2px solid #00bfff;
 	transition:all 0.5s ease-in;
-	padding:10px;
+	padding:10px;	
 }
 
 .display-1 {
@@ -144,21 +145,21 @@ h3{
 
 .display-1:hover {
 	font-size: 85px;
-	color: #0ad8eb;
+	color: #00bfff;
 	transition:all 0.5s ease-in;
 }
 
 li :hover
 {
-	color:#41f18d;
+	color:#00bfff;
 	transition:all 0.5s ease-in;
 	padding:10px;
 }
 
 li a:hover
 {
-	color:#41f18d;
-	border-bottom:2px solid #41f18d;
+	color:#cc6aff;
+	border-bottom:2px solid #00bfff;
 	transition:all 0.5s ease-in;
 	padding:10px;
 }
@@ -166,7 +167,7 @@ li a:hover
 
 .text-center:hover {
 	font-size: 35px;
-	color: #0ad8eb;
+	color:#00bfff;
 	transition:all 0.5s ease-in;
 }
 
@@ -289,6 +290,10 @@ li a:hover
     .modal-content {
         width: 100%;
     }
+}
+
+#bottom-cell{
+  margin-bottom: 60px;
 }
 
 h4 {

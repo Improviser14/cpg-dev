@@ -18,7 +18,23 @@
         Particles.init({
           selector: '.background',
           connectParticles:true,
-          color: "#00BFFF"
+          color: "#00BFFF",
+            responsive: [
+            {
+              breakpoint: 768,
+                options: {
+                  maxParticles: 80,
+                  connectParticles: true
+                }
+	          },
+            {
+              breakpoint:660,
+              options: {
+                maxParticles: 40,
+                connectParticles: true
+              }
+          	}
+          ]
         });
       };
    </script>
@@ -101,7 +117,7 @@
       <img src="/images/roam.jpg" alt="Business Sites w/integrated Social Apps" class="responsive-image myImg">
     </div>
   
-    <div class="cell">
+    <div class="cell" id="bottom-cell">
       <h4 class ="text-center">Custom Web Animations</h4>
       <img src="/images/matrix.jpg" alt="Custom Web Animations" class="responsive-image myImg">
     </div>
