@@ -11,10 +11,23 @@ body {
   font-family: Occupied,Arial,sans-seriff;
 }
 
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/*@media screen and (min-width: 768px){*/
+/*  h3{*/
+/*    margin-top: 200px;*/
+/*  }*/
+/*}*/
+
 h3{
-  color: white;
-  z-index: 2;
-  /*margin-top:80px;*/
+  color:white;
+  margin:60px;
 }
 
  
@@ -31,17 +44,6 @@ h3{
 }
 
 
-
-/*@media only screen and (max-width: 768px){*/
-/*body{*/
-/*font-family: 'Occupied';*/
-/*font-weight:normal;*/
-/*font-style:normal;*/
-/*}*/
-
-
-/*}*/
-
 /*animation background*/
 /* Header */
 .large-header {
@@ -52,14 +54,6 @@ h3{
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
-}
-
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
 }
 
 #large-header {
@@ -278,25 +272,6 @@ li a:hover
     to {transform:scale(1)}
 }
 
-/* The Close Button */
-/*.close {*/
-/*    position: absolute;*/
-/*    top: 15px;*/
-/*    right: 35px;*/
-/*    color: #f1f1f1;*/
-/*    font-size: 40px;*/
-/*    font-weight: bold;*/
-/*    transition: 0.3s;*/
-/*}*/
-
-/*.close:hover,*/
-/*.close:focus {*/
-/*    color: #bbb;*/
-/*    text-decoration: none;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   
     .modal-content {
