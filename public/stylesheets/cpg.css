@@ -20,15 +20,27 @@ h3{
  
 @font-face {
   font-family:"Occupied";
-  src: url("/public/font/Occupied.eot?") format("eot"),
-       url("/public/font/Occupied.woff") format("woff"),
-       url("/public/font/Occupied.otf") format("otf"),
-       url("/public/font/Occupied.woff2") format("woff2"),
-       url("/public/font/Occupied.ttf") format("truetype"), 
-       url("/public/font/Occupied.svg#Occupied") format("svg");
+  src: url("/font/Occupied.eot?") format("eot"),
+       url("/font/Occupied.woff") format("woff"),
+       url("/font/Occupied.otf") format("otf"),
+       url("/font/Occupied.woff2") format("woff2"),
+       url("/font/Occupied.ttf") format("truetype"), 
+       url("/font/Occupied.svg#Occupied") format("svg");
   font-weight:normal;
   font-style:normal;
 }
+
+
+
+/*@media only screen and (max-width: 768px){*/
+/*body{*/
+/*font-family: 'Occupied';*/
+/*font-weight:normal;*/
+/*font-style:normal;*/
+/*}*/
+
+
+/*}*/
 
 /*animation background*/
 /* Header */
