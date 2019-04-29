@@ -20,6 +20,12 @@ body {
    background-image: url("/images/Digital Water.jpg"); 
 }
 
+@media only screen and (max-width: 576px){
+	h2{
+	margin-top: 20px;	
+	}
+}
+
 .card {
     -webkit-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
       -moz-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
