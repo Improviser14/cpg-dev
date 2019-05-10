@@ -273,8 +273,7 @@ li a:hover
 }
 
 @media only screen and (max-width: 700px){
-  
-    .modal-content {
+  .modal-content {
         width: 100%;
     }
 }
@@ -284,6 +283,10 @@ li a:hover
 }
 
 h4 {
+  text-align: center;
+}
+
+.anchor-center {
   text-align: center;
 }
 

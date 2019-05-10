@@ -43,6 +43,10 @@ app.get('/pricing', function(req, res){
     res.render('pricing');
 });
 
+app.get('/preferences', function(req, res){
+    res.render('preferences');
+});
+
 app.use("/contact", contactRoutes);
  
 app.use(flash());
