@@ -5,3 +5,4 @@ Occupied.otf font
 Linear gradient images
 Pricing view for clients
 Informational links
+Particles.js integration
