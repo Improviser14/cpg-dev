@@ -1,5 +1,4 @@
- 
-@font-face {
+ @font-face {
   font-family:"Occupied";
   src: url("/font/Occupied.eot?") format("eot"),
        url("/font/Occupied.woff") format("woff"),
@@ -19,8 +18,6 @@ body {
 .jumbotron {
    background-image: url("/images/Digital Water.jpg"); 
 }
-
-
 
 .navbar-brand:hover{
 	color:#cc6aff;

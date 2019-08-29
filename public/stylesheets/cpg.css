@@ -1,9 +1,6 @@
-/* general styles */
 html, body {
   height: 100%;
   width: 100%;
-  /* margin: 0;*/
-  /*padding: 0;*/
 }
 
 body {
@@ -19,19 +16,12 @@ body {
   z-index: 0;
 }
 
-/*@media screen and (min-width: 768px){*/
-/*  h3{*/
-/*    margin-top: 200px;*/
-/*  }*/
-/*}*/
-
 h3{
   color:white;
   margin:60px;
 }
 
- 
-@font-face {
+ @font-face {
   font-family:"Occupied";
   src: url("/font/Occupied.eot?") format("eot"),
        url("/font/Occupied.woff") format("woff"),
@@ -43,8 +33,7 @@ h3{
   font-style:normal;
 }
 
-
-/*animation background*/
+/*particles.js animated background*/
 /* Header */
 .large-header {
 	position: relative;
@@ -87,7 +76,7 @@ h3{
 		font-size: 3em;
 	}
 }
-/*end animation background*/
+/*end particles.js animated background*/
 
 /* padded section */
 .pad-section {
@@ -234,14 +223,6 @@ li a:hover
 	transition:all 0.7s ease-in;
 }
 
-/*.cell img {*/
-/*  display: block;*/
-/*}*/
-
-/*.card img {*/
-/*  display: block;*/
-/*}*/
-
 @media screen and (min-width: 600px) {
  
   .grid {
@@ -257,7 +238,6 @@ li a:hover
 .cell {
   margin: 1rem;
 }
-
 
 .myImg:hover {opacity: 0.7;}
 
