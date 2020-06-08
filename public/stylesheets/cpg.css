@@ -54,12 +54,16 @@ h3 {
   position: absolute;
   margin: 0;
   padding: 0;
-  color: #f9f1e9;
   text-align: center;
   top: 50%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
+}
+
+#whatWeBuild {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .demo-1 .main-title {
@@ -159,9 +163,9 @@ li a:hover {
 }
 
 .text-center:hover {
-  font-size: 35px;
+  font-size: 25px;
   color: #00bfff;
-  transition: all 0.5s ease-in;
+  transition: all 0.7s ease-in;
 }
 
 #about {
@@ -208,7 +212,7 @@ li a:hover {
   opacity: 0.85;
 }
 
-.cell img {
+.col img {
   -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
@@ -236,13 +240,17 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: row;
   }
-  .cell {
+  .col {
     width: 100%;
   }
 }
 
-.cell {
+.col {
   margin: 1rem;
+}
+
+#mern {
+  padding: 80px;
 }
 
 .myImg:hover {
@@ -273,9 +281,9 @@ a:hover {
   }
 }
 
-#bottom-cell {
+/* #bottom-cell {
   margin-bottom: 60px;
-}
+} */
 
 h4 {
   text-align: center;
