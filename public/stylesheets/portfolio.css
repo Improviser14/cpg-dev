@@ -110,7 +110,6 @@ h3 {
 } */
 
 .navbar-brand:hover {
-  color: #cc6aff;
   border-bottom: 2px solid #00bfff;
   transition: all 0.5s ease-in;
   padding: 10px;
@@ -121,8 +120,8 @@ h3 {
   transition: all 0.7s ease-in;
 }
 
-.nav li a:hover {
-  color: #00bfff;
+li a:hover {
+  font-size: 20px;
   border-bottom: 2px solid #00bfff;
   transition: all 0.5s ease-in;
   padding: 10px;

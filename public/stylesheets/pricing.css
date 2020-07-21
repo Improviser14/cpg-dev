@@ -66,15 +66,9 @@ h2 {
   padding: 10px;
 }
 
-li :hover {
-  color: #41f18d;
-  transition: all 0.5s ease-in;
-  padding: 10px;
-}
-
 li a:hover {
-  color: #41f18d;
-  border-bottom: 2px solid #41f18d;
+  font-size: 20px;
+  border-bottom: 2px solid #00bfff;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
