@@ -3,9 +3,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pricing</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/pricing.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="stylesheets/pricing.css">
+	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -22,13 +23,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/#what we build">what we build</a>
+        <a class="nav-link" href="/portfolio">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="/pricing">pricing</a>
+        <a class="nav-link active" href="/pricing">Pricing</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contact">contact us</a>
+        <a class="nav-link" href="/contact">Contact Us</a>
       </li>
     </ul>
   </div>
@@ -38,16 +39,30 @@
  
  <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <br>
-    <h2>Standard packages</h2>
+     <br>
+    <p>We build custom web apps. No templates or one-size-fits-all thinking here. Your needs are specific and unique, and your website should refect you and/or your business's vision.</p>
+
+    <p>Every custom website/app that we build is mobile-responsive and full-stack by default. This means that your site will look great on all devices and that it will be built to scale up as needed.</p>
+  
+    <p>If you expand or need to add features, your webapp can handle any upgrades without the need for expensive redesigns or re-architecture. This approach is the opposite of industry standards and is unique to CPG. </p>
+
+    <p>We study your business and it's competitors, analyze the standards for your field, and leverage this research data to coordinate with you before we build anything.</p>
+
+    <p>Our customer service is the best in the industry. We are always available to answer questions and concerns. Each project is personal to us, and we want to build long-term relationships with our clients.</p> 
+    
+    <p>For those clients that want a quick build process or don't really know what they need, we offer basic packages. Keep in mind that these basic packages can also be customized to meet your specifications.</p>
+
+    <h2 id="standardPackages">Standard packages</h2>
+
+    
     <div class="grid">
       
       <div class="card">
-        <div class="card-body">
+        <div class="card-body"> 
           <h5 class="card-title">Standard Website (perfect for artists, photographers, musicians & small businesses)</h5>
           <h5 class="card-title">$2100 includes:</h5>
            <ul class="list-group list-group-flush">
-            <li class="list-group-item">web hosting and domain name registration</li>
+            <li class="list-group-item">web hosting and DNS configuration</li>
             <li class="list-group-item">responsive design (so your site looks great on all devices)</li>
             <li class="list-group-item">customizable navigation bar</li>
             <li class="list-group-item">up to 5 pages of content</li>
@@ -61,7 +76,7 @@
           <h5 class="card-title">Dynamic Blog App (perfect for writers, journalists, thought leaders & travelers)</h5>
           <h5 class="card-title">$2600 includes:</h5>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">web hosting and domain name registration</li>
+              <li class="list-group-item">web hosting and DNS configuration</li>
               <li class="list-group-item">responsive design (so your site looks great on all devices)</li>
               <li class="list-group-item">permissioned actions (login & posting)</li>
               <li class="list-group-item">database integration and storage</li>
@@ -119,7 +134,7 @@
   <br>
   <div class="card">
   <div class="card-body">
-    <h2 class="display-6">À La Carte Add-Ons</h2>
+    <h2 class="display-6"id="àLaCarte">À La Carte Add-Ons</h2>
     <ul class="list-group">
       <li class="list-group-item d-flex justify-content-between align-items-center">
         payment integration (price dependent upon features)
@@ -160,10 +175,10 @@
     </ul>
   </div>
 </div>
-    <p>*One year of free standard maintenance ($660 value) will cover web hosting, domain name fees, as well as yearly third-party SaaS (software as a service) fees and up to 2 minor changes per month.
-        Minor changes are limited to adding links, changing text, replacing images, calendar updates and event updates. 
-        Standard maintenance fees will be billed after the first year at a total cost of $600 per year($60 discount for yearly payments), payable one year from initial deployment date, or on a monthly payment schedule of $55 per month, due on the 1st of each month, if you prefer.
-        Additional minor changes exceeding the 2 allotted per month will be billed at $40 per change.</p>
+    <p>*One year of free standard maintenance ($660 value) will cover web hosting, yearly third-party SaaS (software as a service) fees and up to 2 minor changes per month.
+        Minor changes are limited to: adding links, changing text, replacing images, calendar updates and event updates. 
+        Standard maintenance fees will be billed after the first year at a total cost of $660 per year, payable one year from initial deployment date.
+        Additional minor changes exceeding the 2 allotted per month will be billed at $100/hour.</p>
   </div>
 </div>
 </div>

@@ -1,52 +1,63 @@
- @font-face {
-  font-family:"Occupied";
+@font-face {
+  font-family: "Occupied";
   src: url("/font/Occupied.eot?") format("eot"),
-       url("/font/Occupied.woff") format("woff"),
-       url("/font/Occupied.otf") format("otf"),
-       url("/font/Occupied.woff2") format("woff2"),
-       url("/font/Occupied.ttf") format("truetype"), 
-       url("/font/Occupied.svg#Occupied") format("svg");
-  font-weight:normal;
-  font-style:normal;
+    url("/font/Occupied.woff") format("woff"),
+    url("/font/Occupied.otf") format("otf"),
+    url("/font/Occupied.woff2") format("woff2"),
+    url("/font/Occupied.ttf") format("truetype"),
+    url("/font/Occupied.svg#Occupied") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  background-image: url("/images/Digital Water.jpg");
-  font-family: Occupied; 
+  font-family: Occupied;
+}
+
+.lead {
+  color: white;
 }
 
 .jumbotron {
-   background-image: url("/images/Digital Water.jpg"); 
+  background: #5c258d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4389a2,
+    #5c258d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4389a2,
+    #5c258d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.navbar-brand:hover{
-	color:#cc6aff;
-	border-bottom:2px solid #0ad8eb;
-	transition:all 0.5s ease-in;
-	padding:10px;	
+.navbar-brand:hover {
+  color: #cc6aff;
+  border-bottom: 2px solid #0ad8eb;
+  transition: all 0.5s ease-in;
+  padding: 10px;
 }
 
-li :hover
-{
-	color:#41f18d;
-	transition:all 0.5s ease-in;
-	padding:10px;
+li :hover {
+  color: #41f18d;
+  transition: all 0.5s ease-in;
+  padding: 10px;
 }
 
-li a:hover
-{
-	color:#41f18d;
-	border-bottom:2px solid #41f18d;
-	transition:all 0.5s ease-in;
-	padding:10px;
+li a:hover {
+  color: #41f18d;
+  border-bottom: 2px solid #41f18d;
+  transition: all 0.5s ease-in;
+  padding: 10px;
 }
 
 .card {
-    -webkit-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
-      -moz-box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
-      box-shadow: -5px 10px 5px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
 }
 
 p {
-    margin-top: 20px;
+  margin-top: 20px;
 }

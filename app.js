@@ -38,8 +38,8 @@ app.get("/pricing", function(req, res) {
   res.render("pricing");
 });
 
-app.get("/preferences", function(req, res) {
-  res.render("preferences");
+app.get("/portfolio", function(req, res) {
+  res.render("portfolio");
 });
 
 app.use("/contact", contactRoutes);

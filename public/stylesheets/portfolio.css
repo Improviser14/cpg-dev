@@ -2,9 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-image: url("/images/Portrait.jpg");
   font-family: Occupied, Arial, sans-seriff;
-  color: white;
+  color: black;
 }
 
 .background {
@@ -32,8 +31,6 @@ h3 {
   font-style: normal;
 }
 
-/*particles.js animated background*/
-/* Header */
 .large-header {
   position: relative;
   width: 100%;
@@ -56,7 +53,7 @@ h3 {
 }
 
 #whatWeBuild {
-  padding-top: 500px;
+  padding-top: 100px;
 }
 
 .demo-1 .main-title {
@@ -87,6 +84,7 @@ h3 {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  padding-bottom: 200px;
 }
 
 .text-vcenter h1 {
@@ -96,7 +94,7 @@ h3 {
   padding: 0;
 }
 /* additional sections */
-#home {
+/* #home {
   background-image: url("http://cdn.eso.org/images/screen/eso1049a.jpg");
   display: table;
   height: 100%;
@@ -109,7 +107,7 @@ h3 {
   -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-}
+} */
 
 .navbar-brand:hover {
   color: #cc6aff;
@@ -168,6 +166,13 @@ li a:hover {
   -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+#Thad img {
+  -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
+  margin: 20px;
 }
 #THP_img {
   -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
