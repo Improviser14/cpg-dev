@@ -2,6 +2,9 @@
   "name": "cpg-dev",
   "version": "1.0.0",
   "description": "cpg-dev",
+  "engines": {
+    "node": "10.16.3"
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
