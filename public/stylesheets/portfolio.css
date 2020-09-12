@@ -93,21 +93,10 @@ h3 {
   margin: 0;
   padding: 0;
 }
-/* additional sections */
-/* #home {
-  background-image: url("http://cdn.eso.org/images/screen/eso1049a.jpg");
-  display: table;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-} */
+
+#otherworkwedo {
+  padding-top: 60px;
+}
 
 .navbar-brand:hover {
   border-bottom: 2px solid #00bfff;
