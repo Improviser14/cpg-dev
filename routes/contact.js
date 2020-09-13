@@ -44,7 +44,7 @@ router.post("/send", function(req, res) {
       user: "pavance40@gmail.com",
       //must go to https://myaccount.google.com/app passwords then paste the generated password here or transporter will not work
       // google password needs to be hard-coded. Won't connect to .env file
-      pass: "ijfjqnnzsqltdlca"
+      pass: "ydscobgisdjytoid"
     }
   });
 
