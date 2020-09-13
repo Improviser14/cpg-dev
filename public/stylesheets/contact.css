@@ -13,6 +13,7 @@
 body {
   font-family: Occupied;
   background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
+  color: blueviolet;
 }
 
 .lead {
@@ -21,6 +22,7 @@ body {
 
 .jumbotron {
   background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
+  
 }
 
 .navbar-brand:hover {

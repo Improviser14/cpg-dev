@@ -13,6 +13,7 @@
 body {
   font-family: Occupied;
   background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
+  color: blueviolet;
 }
 
 .jumbotron {
@@ -68,7 +69,7 @@ li a:hover {
 
 p {
   margin-top: 20px;
-  color: black;
+  color: blueviolet;
 }
 
 .btn {
