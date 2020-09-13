@@ -3,7 +3,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: Occupied, Arial, sans-seriff;
-  color: black;
+  color: blueviolet;
+  background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
 }
 
 .background {
@@ -99,19 +100,19 @@ h3 {
 }
 
 .navbar-brand:hover {
-  border-bottom: 2px solid #00bfff;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 .text-vcenter :hover {
-  color: #00bfff;
+  color: blueviolet;
   transition: all 0.7s ease-in;
 }
 
 li a:hover {
   font-size: 20px;
-  border-bottom: 2px solid #00bfff;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
@@ -128,21 +129,19 @@ li a:hover {
 }
 
 li :hover {
-  color: #00bfff;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 li a:hover {
   color: #cc6aff;
-  border-bottom: 2px solid #00bfff;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 .text-center:hover {
   font-size: 25px;
-  color: #00bfff;
   transition: all 0.7s ease-in;
 }
 
@@ -175,7 +174,7 @@ li a:hover {
 
 a:hover {
   font-size: 20px;
-  color: #0ad8eb;
+  color: blueviolet;
   transition: all 0.7s ease-in;
 }
 
@@ -225,10 +224,6 @@ a:hover {
     width: 100%;
   }
 }
-
-/* #bottom-cell {
-  margin-bottom: 60px;
-} */
 
 h4 {
   text-align: center;

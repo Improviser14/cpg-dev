@@ -12,35 +12,22 @@
 
 body {
   font-family: Occupied;
+  background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
 }
 
 .jumbotron {
-  background: #5c258d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #4389a2,
-    #5c258d
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #4389a2,
-    #5c258d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
 }
 
-/* a {
-  background: #4389a2; 
-} */
-
 h2 {
-  color: white;
+  color: blueviolet;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 #àLaCarte {
-  color: black;
+  color: blueviolet;
 }
 
 #standardPackages {
@@ -57,28 +44,41 @@ h2 {
   -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
+  color: blueviolet;
 }
 
 .navbar-brand:hover {
   color: #cc6aff;
-  border-bottom: 2px solid #0ad8eb;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 li a:hover {
   font-size: 20px;
-  border-bottom: 2px solid #00bfff;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 .text-vcenter :hover {
-  color: #0ad8eb;
+  color: blueviolet;
   transition: all 0.7s ease-in;
 }
 
 p {
   margin-top: 20px;
+  color: black;
+}
+
+.btn {
+  background-color: blueviolet;
+}
+
+.badge {
+  background-color: blueviolet;
+}
+
+#contactBadge {
   color: white;
 }

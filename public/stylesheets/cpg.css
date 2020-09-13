@@ -116,20 +116,20 @@ h3 {
 }
 
 .navbar-brand:hover {
-  color: #cc6aff;
-  border-bottom: 2px solid #00bfff;
+  color: blueviolet;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 .text-vcenter :hover {
-  color: #00bfff;
+  color: blueviolet;
   transition: all 0.7s ease-in;
 }
 
 .nav li a:hover {
-  color: #00bfff;
-  border-bottom: 2px solid #00bfff;
+  color: blueviolet;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
@@ -141,26 +141,26 @@ h3 {
 
 .display-1:hover {
   font-size: 85px;
-  color: #00bfff;
+  color: blueviolet;
   transition: all 0.5s ease-in;
 }
 
 li :hover {
-  color: #00bfff;
+  color: blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 li a:hover {
-  color: #cc6aff;
-  border-bottom: 2px solid #00bfff;
+  color: blueviolet;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 .text-center:hover {
   font-size: 25px;
-  color: #00bfff;
+  color: blueviolet;
   transition: all 0.7s ease-in;
 }
 
@@ -186,7 +186,7 @@ li a:hover {
 
 a:hover {
   font-size: 20px;
-  color: #0ad8eb;
+  color: blueviolet;
   transition: all 0.7s ease-in;
 }
 
@@ -236,10 +236,6 @@ a:hover {
     width: 100%;
   }
 }
-
-/* #bottom-cell {
-  margin-bottom: 60px;
-} */
 
 h4 {
   text-align: center;

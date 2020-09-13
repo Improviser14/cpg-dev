@@ -12,43 +12,32 @@
 
 body {
   font-family: Occupied;
+  background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
 }
 
 .lead {
-  color: white;
+  color: blueviolet;
 }
 
 .jumbotron {
-  background: #5c258d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #4389a2,
-    #5c258d
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #4389a2,
-    #5c258d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
 }
 
 .navbar-brand:hover {
-  border-bottom: 2px solid #0ad8eb;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 li a:hover {
   font-size: 20px;
-  border-bottom: 2px solid #00bfff;
+  border-bottom: 2px solid blueviolet;
   transition: all 0.5s ease-in;
   padding: 10px;
 }
 
 .card {
-  -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
+  color: blueviolet;
 }
 
 p {
