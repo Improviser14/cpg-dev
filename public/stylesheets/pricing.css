@@ -20,6 +20,10 @@ body {
   background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
 }
 
+.weBuildCustom {
+  color: black;
+}
+
 h2 {
   color: blueviolet;
   text-align: center;
