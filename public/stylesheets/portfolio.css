@@ -441,7 +441,7 @@ video {
  left: 50%;
  right: 50%;
 
- background-image: url("http://static.freepik.com/free-photo/brushed-metal_21275858.jpg");
+ background-image: url("/images/galaxyBackground.jpg");
 -webkit-background-size: 100%;
  background-repeat: no-repeat;
  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;
@@ -469,7 +469,7 @@ video {
  height: 200px;
  left: 10px;
  top: 10px;
- background-image: url("/public/images/brushed-metal_21275858.jpg");
+ background-image: url("/images/galaxyBackground.jpg");
  background-size: 100%;
  background-repeat: no-repeat;
  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;
