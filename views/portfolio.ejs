@@ -22,6 +22,7 @@
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="stylesheets/portfolio.css" rel="stylesheet" />
+  <link href="cpg-matrix.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -63,7 +64,7 @@
 
       <div class="col">
         <h5 class="text-center">Law Firms</h5>
-        <a href="https://www.thpfamilylaw.com">
+        <a href="https://www.thpfamilylaw.com" target="_blank">
           <img src="/images/THPImageNEW.png" id="THP_img" alt="Small Business/Non-Profit websites" class="responsive-image myImg"></a>
       </div>
 
@@ -71,7 +72,7 @@
 
       <div class="col">
         <h5 class="text-center">Non-Profits</h5>
-        <a href="https://www.friendsofroam.org">
+        <a href="https://www.friendsofroam.org" target="_blank">
           <img src="/images/FOR.png" alt="Dynamic Web Apps" class="responsive-image myImg"></a>
       </div>
     </div>
@@ -80,13 +81,13 @@
 
       <div class="col">
         <h5 class="text-center">Sites w/ Integrated Social App</h5>
-        <a href="https://tranquil-caverns-74813.herokuapp.com/">
+        <a href="https://tranquil-caverns-74813.herokuapp.com/" target="_blank">
           <img src="/images/roam.jpg" alt="Business Sites w/integrated Social Apps" class="responsive-image myImg"></a>
       </div>
 
       <div class="col">
         <h5 class="text-center">Dynamic Social Web Apps</h5>
-        <a href="https://www.bodhishare.com">
+        <a href="https://www.bodhishare.com" target="_blank">
           <img src="/images/bodhishare.jpg" alt="Dynamic Web Apps" class="responsive-image myImg"></a>
       </div>
     </div>
@@ -94,13 +95,13 @@
     <div class="row">
       <div class="col">
         <h5 class="text-center">Consulting Firms</h5>
-        <a href="https://www.huguleyllc.com">
+        <a href="https://www.huguleyllc.com" target="_blank">
           <img src="/images/HuguleySite.png" alt="Dynamic Web Apps" class="responsive-image myImg"></a>
       </div>
 
       <div class="col">
         <h5 class="text-center">Local Businesses</h5>
-        <a href="https://www.adjdriverimprovement.com/">
+        <a href="https://www.adjdriverimprovement.com/" target="_blank">
           <img src="/images/adj.png" alt="Local Businesses" class="responsive-image myImg"></a>
       </div>
 
@@ -122,40 +123,83 @@
       </div>
     </div>
 
+    <!-- MATRIX EXPERIMENT -->
     <div class="row">
       <div class="col">
         <h5 class="text-center">Custom Web Animations</h5>
         <div class="wrapper">
           <video preload="preload" id="video" autoplay="autoplay" loop="loop" muted="true">
             <source src="/video/matrix-video.mp4" type="video/mp4" />
-            <source src="/video/matrix-video.ogg" type="video/ogg" />
+            <!-- <source src="/video/matrix-video.ogg" type="video/ogg" /> -->
           </video>
         </div>
-        <!-- <img src="/images/matrix.jpg" alt="Custom Web Animations" class="responsive-image myImg"> -->
-      </div>
 
-    </div>
 
-    <div class="row">
+        <section class="matrix">
+          <canvas id="c"></canvas>
+        </section>
+        <!-- <nav class="navbar navbar-default navbar navbar-fixed-top">
+          <div class="container-fluid"> -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">CPG Development</a>
+            </div> -->
 
-      <div class="col">
-        <div class="knob-base">
-          <div class="edge">
-            <div class="knob">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">Applications<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Blog Sites</a></li>
+                    <li><a href="#">Artist/Portfolio Sites</a></li>
+                    <li><a href="#">Company Sites</a></li>
+                    <li><a href="#">Interactive Web Apps</a></li>
+                    <li><a href="#">Single Page Dynamic Web Apps</a></li>
+                    <li><a href="#">Repair/rebuild your current website</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#get a quote today">Get a Quote </a></li>
+              </ul> -->
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
 
-              <div class="center">
-                <div class="led">
 
-                </div>
+  </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+      <div class="knob-base">
+        <div class="edge">
+          <div class="knob">
+
+            <div class="center">
+              <div class="led">
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <!-- </div> -->
+  <!-- </div> -->
   </div>
   <!--end container-->
 
@@ -185,6 +229,8 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="path/to/particles.min.js"></script>
+
+
 
   <script>
     transformation = $(".knob").css("transform");
