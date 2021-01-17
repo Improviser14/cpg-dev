@@ -14,7 +14,7 @@ var dotenv = require("dotenv").config(),
 //ssl must be configured on the application level --here
 //uncomment this block when deploying see code at the bottom of this file
 if (process.env.ENVIRONMENT === "prod") {
-  app.use(function(req, res, next) {
+  app.use(function (req, res, next) {
     if (req.get("X-Forwarded-Proto") !== "https") {
       res.redirect("https://" + req.get("Host") + req.url);
     } else next();
@@ -23,7 +23,7 @@ if (process.env.ENVIRONMENT === "prod") {
 
 app.use(
   bodyParser.urlencoded({
-    extended: false
+    extended: false,
   })
 );
 app.use(bodyParser.json());
@@ -36,19 +36,19 @@ app.use("/", router);
 
 app.use(express.static("public/"));
 
-app.get("/contact", function(req, res) {
+app.get("/contact", function (req, res) {
   res.render("contact");
 });
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.render("cpg");
 });
 
-app.get("/pricing", function(req, res) {
-  res.render("pricing");
+app.get("/build", function (req, res) {
+  res.render("build");
 });
 
-app.get("/portfolio", function(req, res) {
+app.get("/portfolio", function (req, res) {
   res.render("portfolio");
 });
 
