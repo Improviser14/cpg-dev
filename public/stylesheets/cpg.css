@@ -20,6 +20,14 @@ h3 {
   margin: 60px;
 }
 
+.dataHeaders {
+  color: grey;
+}
+
+#ownYourCode {
+  padding-bottom: 40px;
+}
+
 @font-face {
   font-family: "Occupied";
   src: url("/font/Occupied.eot?") format("eot"),
