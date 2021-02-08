@@ -44,15 +44,15 @@ app.get("/", function (req, res) {
   res.render("cpg");
 });
 
-app.get("/build", function (req, res) {
-  res.render("build");
+app.get("/yourProject", function (req, res) {
+  res.render("yourProject");
 });
 
-app.get("/portfolio", function (req, res) {
-  res.render("portfolio");
+app.get("/examplesOfOurWork", function (req, res) {
+  res.render("examplesOfOurWork");
 });
 
-app.use("/contact", contactRoutes);
+app.use("/contactUs", contactRoutes);
 
 app.use(flash());
 
