@@ -108,7 +108,7 @@ router.post("/send", function (req, res) {
     return res.redirect("back");
   }
   // secret key
-  var secretKey = process.env.RECAPTCHA_API_SITEKEY;
+  var secretKey = process.env.CAPTCHA;
   // Verify URL
   var verifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_API_SECRET}&response=${captcha}&remoteip=${req
     .connection.remoteAddress}`;
