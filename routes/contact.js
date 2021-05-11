@@ -101,6 +101,8 @@ router.get("/", function (req, res) {
 });
 
 router.post("/send", function (req, res) {
+  console.log("send route");
+  console.log("RECAPTCHA SECRET: " + process.env.RECAPTCHA_API_SECRET);
   const captcha = req.body["g-recaptcha-response"];
   if (!captcha) {
     console.log(req.body);
