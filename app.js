@@ -8,7 +8,7 @@ var dotenv = require("dotenv").config(),
   router = express.Router(),
   session = require("express-session"),
   flash = require("connect-flash"),
-  contactRoutes = require("./routes/contact"),
+  // contactRoutes = require("./routes/contact"),
   serveStatic = require("serve-static");
 
 //ssl must be configured on the application level --here
@@ -36,9 +36,9 @@ app.use("/", router);
 
 app.use(express.static("public/"));
 
-app.get("/contact", function (req, res) {
-  res.render("contact");
-});
+// app.get("/contact", function (req, res) {
+//   res.render("contact");
+// });
 
 app.get("/", function (req, res) {
   res.render("cpg");
@@ -52,7 +52,7 @@ app.get("/examplesOfOurWork", function (req, res) {
   res.render("examplesOfOurWork");
 });
 
-app.use("/contactUs", contactRoutes);
+// app.use("/contactUs", contactRoutes);
 
 app.use(flash());
 
