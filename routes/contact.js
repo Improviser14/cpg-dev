@@ -97,12 +97,10 @@ var express = require("express"),
 
 // contact form
 router.get("/", function (req, res) {
-  res.render("contact", { page: "contact" })
+  res.render("contact/contactUs", { page: 'contact' });
 });
 
 router.post("/send", function (req, res) {
-  console.log("send route");
-  console.log("RECAPTCHA SECRET: " + process.env.RECAPTCHA_API_SECRET);
   const captcha = req.body["g-recaptcha-response"];
   if (!captcha) {
     console.log(req.body);
@@ -112,7 +110,7 @@ router.post("/send", function (req, res) {
   // secret key
   var secretKey = process.env.CAPTCHA;
   // Verify URL
-  var verifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_API_SECRET}&response=${captcha}&remoteip=${req
+  var verifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.PRIVATE_RECAPTCHA_API_SECRET}&response=${captcha}&remoteip=${req
     .connection.remoteAddress}`;
   // Make request to Verify URL
   request.get(verifyURL, (err, response, body) => {
@@ -136,7 +134,7 @@ router.post("/send", function (req, res) {
       from: 'Chris Galvan <pavance40@gmail.com',
       to: 'pavance40@gmail.com ',
       replyTo: req.body.email,
-      subject: "CPG contact request from: " + req.body.name,
+      subject: "Roam contact request from: " + req.body.name,
       text: 'You have received an email from... Name: ' + req.body.name + ' Phone: ' + req.body.phone + ' Email: ' + req.body.email + ' Message: ' + req.body.message,
       html: '<h3>You have received an email from...</h3><ul><li>Name: ' + req.body.name + ' </li><li>Phone: ' + req.body.phone + ' </li><li>Email: ' + req.body.email + ' </li></ul><p>Message: <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + req.body.message + ' </p>'
     };
