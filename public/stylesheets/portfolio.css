@@ -16,135 +16,133 @@ body {
 }
 
 h2 {
-  color: blueviolet;/*.knob-base {*/
+  color: blueviolet; /*.knob-base {*/
 
-/*  border: 0px solid black;*/
-/*  border-radius: 100%;*/
-/*  width: 260px;*/
-/*  height: 260px;*/
-/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
-/*  background-repeat: no-repeat;*/
-/*  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;*/
-/*  z-index: 1000;*/
-/*  margin-left: -125px;*/
-/*  margin-right: -125px;*/
-/*}*/
+  /*  border: 0px solid black;*/
+  /*  border-radius: 100%;*/
+  /*  width: 260px;*/
+  /*  height: 260px;*/
+  /*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
+  /*  background-repeat: no-repeat;*/
+  /*  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;*/
+  /*  z-index: 1000;*/
+  /*  margin-left: -125px;*/
+  /*  margin-right: -125px;*/
+  /*}*/
 
-/*.knob-base .edge {*/
-/*  border: 1px solid black;*/
-/*  border-radius: 100%;*/
+  /*.knob-base .edge {*/
+  /*  border: 1px solid black;*/
+  /*  border-radius: 100%;*/
 
-/*  width: 200px;*/
-/*  height: 200px;*/
-/*  background-color: rgba(0,0,0,0.45);*/
-/*  box-shadow: 0px 0px 10px 2px #000 inset;*/
-/*}*/
+  /*  width: 200px;*/
+  /*  height: 200px;*/
+  /*  background-color: rgba(0,0,0,0.45);*/
+  /*  box-shadow: 0px 0px 10px 2px #000 inset;*/
+  /*}*/
 
-/*.knob-base .edge .knob {*/
-/*  border: 0px solid black;*/
-/*  border-radius: 100%;*/
-/*  width: 200px;*/
-/*  height: 200px;*/
-/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
-/*  background-size: 100%;*/
-/*  background-repeat: no-repeat;*/
-/*  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;*/
-/*  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);*/
-/*  z-index: 1000*/
-/*}*/
+  /*.knob-base .edge .knob {*/
+  /*  border: 0px solid black;*/
+  /*  border-radius: 100%;*/
+  /*  width: 200px;*/
+  /*  height: 200px;*/
+  /*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
+  /*  background-size: 100%;*/
+  /*  background-repeat: no-repeat;*/
+  /*  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;*/
+  /*  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);*/
+  /*  z-index: 1000*/
+  /*}*/
 
-/*.knob .center {*/
-/*  border-radius: 100%;*/
-/*  border: 1px solid rgba(255,255,255,0.75);*/
-/*  width: 189px;*/
-/*  height: 189px;*/
-/*  left: 4px;*/
-/*  top: 4px;*/
-/*  visibility: show;*/
-/*  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;*/
+  /*.knob .center {*/
+  /*  border-radius: 100%;*/
+  /*  border: 1px solid rgba(255,255,255,0.75);*/
+  /*  width: 189px;*/
+  /*  height: 189px;*/
+  /*  left: 4px;*/
+  /*  top: 4px;*/
+  /*  visibility: show;*/
+  /*  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;*/
 
-/*}*/
+  /*}*/
 
-/*.knob .center .led {*/
-/*  border: 1px solid #0af;*/
-/*  border-radius: 4px;*/
-/*  width: 6px;*/
-/*  height: 26px;*/
-/*  position: absolute;*/
-/*  bottom: 10px;*/
+  /*.knob .center .led {*/
+  /*  border: 1px solid #0af;*/
+  /*  border-radius: 4px;*/
+  /*  width: 6px;*/
+  /*  height: 26px;*/
+  /*  position: absolute;*/
+  /*  bottom: 10px;*/
 
-/*  background-color: #0df;*/
-/*  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;*/
-/*}*/
+  /*  background-color: #0df;*/
+  /*  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;*/
+  /*}*/
 
-/*.knob-base {*/
-/*  top: 13px;*/
-/*  border: 0px solid black;*/
-/*  border-radius: 100%;*/
-/*  width: 260px;*/
-/*  height: 260px;*/
-/*  position: relative;*/
-/*  left: 50%;*/
-/*  right: 50%;*/
+  /*.knob-base {*/
+  /*  top: 13px;*/
+  /*  border: 0px solid black;*/
+  /*  border-radius: 100%;*/
+  /*  width: 260px;*/
+  /*  height: 260px;*/
+  /*  position: relative;*/
+  /*  left: 50%;*/
+  /*  right: 50%;*/
 
-/*  background-image: url("http://static.freepik.com/free-photo/brushed-metal_21275858.jpg");*/
-/* -webkit-background-size: 100%;*/
-/*  background-repeat: no-repeat;*/
-/*  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;*/
-/*  z-index: 1000;*/
+  /*  background-image: url("http://static.freepik.com/free-photo/brushed-metal_21275858.jpg");*/
+  /* -webkit-background-size: 100%;*/
+  /*  background-repeat: no-repeat;*/
+  /*  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;*/
+  /*  z-index: 1000;*/
 
+  /*}*/
+  /*.knob-base .edge {*/
+  /*  border: 1px solid black;*/
+  /*  border-radius: 100%;*/
+  /*  position: relative;*/
+  /*  width: 220px;*/
+  /*  height: 220px;*/
+  /*  left: 20px;*/
+  /*  top: 20px;*/
+  /*  background-color: rgba(0,0,0,0.45);*/
+  /*  box-shadow: 0px 0px 10px 2px #000 inset;*/
+  /*}*/
+  /*.knob-base .edge .knob {*/
+  /*  border: 0px solid black;*/
+  /*  border-radius: 100%;*/
+  /*  position: relative;*/
+  /*  width: 200px;*/
+  /*  height: 200px;*/
+  /*  left: 10px;*/
+  /*  top: 10px;*/
+  /*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
+  /*  background-size: 100%;*/
+  /*  background-repeat: no-repeat;*/
+  /*  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;*/
+  /*  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);*/
+  /*  z-index: 1000*/
+  /*}*/
+  /*.knob .center {*/
+  /*  position: absolute;*/
+  /*  border-radius: 100%;*/
+  /*  border: 1px solid rgba(255,255,255,0.75);*/
+  /*  width: 189px;*/
+  /*  height: 189px;*/
+  /*  left: 4px;*/
+  /*  top: 4px;*/
+  /*  visibility: show;*/
+  /*  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;*/
 
-
-/*}*/
-/*.knob-base .edge {*/
-/*  border: 1px solid black;*/
-/*  border-radius: 100%;*/
-/*  position: relative;*/
-/*  width: 220px;*/
-/*  height: 220px;*/
-/*  left: 20px;*/
-/*  top: 20px;*/
-/*  background-color: rgba(0,0,0,0.45);*/
-/*  box-shadow: 0px 0px 10px 2px #000 inset;*/
-/*}*/
-/*.knob-base .edge .knob {*/
-/*  border: 0px solid black;*/
-/*  border-radius: 100%;*/
-/*  position: relative;*/
-/*  width: 200px;*/
-/*  height: 200px;*/
-/*  left: 10px;*/
-/*  top: 10px;*/
-/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
-/*  background-size: 100%;*/
-/*  background-repeat: no-repeat;*/
-/*  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;*/
-/*  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);*/
-/*  z-index: 1000*/
-/*}*/
-/*.knob .center {*/
-/*  position: absolute;*/
-/*  border-radius: 100%;*/
-/*  border: 1px solid rgba(255,255,255,0.75);*/
-/*  width: 189px;*/
-/*  height: 189px;*/
-/*  left: 4px;*/
-/*  top: 4px;*/
-/*  visibility: show;*/
-/*  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;*/
-
-/*}*/
-/*.knob .center .led {*/
-/*  border: 1px solid #0af;*/
-/*  border-radius: 4px;*/
-/*  width: 6px;*/
-/*  height: 26px;*/
-/*  position: absolute;*/
-/*  bottom: 10px;*/
-/*  left: 50%;*/
-/*  background-color: #0df;*/
-/*  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;*/
-/*}*/
+  /*}*/
+  /*.knob .center .led {*/
+  /*  border: 1px solid #0af;*/
+  /*  border-radius: 4px;*/
+  /*  width: 6px;*/
+  /*  height: 26px;*/
+  /*  position: absolute;*/
+  /*  bottom: 10px;*/
+  /*  left: 50%;*/
+  /*  background-color: #0df;*/
+  /*  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;*/
+  /*}*/
 }
 
 h3 {
@@ -186,7 +184,7 @@ h3 {
 }
 
 #whatWeBuild {
-  padding-top: 100px;
+  padding-top: 240px;
 }
 
 .demo-1 .main-title {
@@ -371,132 +369,130 @@ video {
 }
 
 .knob-base {
-
- border: 0px solid black;
- border-radius: 100%;
- width: 260px;
- height: 260px;
- background-image: url("/public/images/brushed-metal_21275858.jpg");
- background-repeat: no-repeat;
- box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;
- z-index: 1000;
- margin-left: -125px;
- margin-right: -125px;
+  border: 0px solid black;
+  border-radius: 100%;
+  width: 260px;
+  height: 260px;
+  background-image: url("/public/images/brushed-metal_21275858.jpg");
+  background-repeat: no-repeat;
+  box-shadow: 0px 40px 80px rgba(255, 255, 255, 1) inset, 0px 1px 1px #000 inset;
+  z-index: 1000;
+  margin-left: -125px;
+  margin-right: -125px;
 }
 
 .knob-base .edge {
- border: 1px solid black;
- border-radius: 100%;
+  border: 1px solid black;
+  border-radius: 100%;
 
- width: 200px;
- height: 200px;
- background-color: rgba(0,0,0,0.45);
- box-shadow: 0px 0px 10px 2px #000 inset;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px 2px #000 inset;
 }
 
 .knob-base .edge .knob {
- border: 0px solid black;
- border-radius: 100%;
- width: 200px;
- height: 200px;
- background-image: url("/public/images/brushed-metal_21275858.jpg");
- background-size: 100%;
- background-repeat: no-repeat;
- box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;
- -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
- z-index: 1000
+  border: 0px solid black;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  background-image: url("/public/images/brushed-metal_21275858.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;
+  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  z-index: 1000;
 }
 
 .knob .center {
- border-radius: 100%;
- border: 1px solid rgba(255,255,255,0.75);
- width: 189px;
- height: 189px;
- left: 4px;
- top: 4px;
- visibility: show;
- box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;
-
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width: 189px;
+  height: 189px;
+  left: 4px;
+  top: 4px;
+  visibility: show;
+  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,
+    0px 0px 1px 3px rgba(255, 255, 255, 0.8),
+    0px 40px 100px 0px rgba(0, 0, 0, 0.75) inset;
 }
 
 .knob .center .led {
- border: 1px solid #0af;
- border-radius: 4px;
- width: 6px;
- height: 26px;
- position: absolute;
- bottom: 10px;
+  border: 1px solid #0af;
+  border-radius: 4px;
+  width: 6px;
+  height: 26px;
+  position: absolute;
+  bottom: 10px;
 
- background-color: #0df;
- box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;
+  background-color: #0df;
+  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;
 }
 
 .knob-base {
- top: 13px;
- border: 0px solid black;
- border-radius: 100%;
- width: 260px;
- height: 260px;
- position: relative;
- left: 50%;
- right: 50%;
+  top: 13px;
+  border: 0px solid black;
+  border-radius: 100%;
+  width: 260px;
+  height: 260px;
+  position: relative;
+  left: 50%;
+  right: 50%;
 
- background-image: url("/images/galaxyBackground.jpg");
--webkit-background-size: 100%;
- background-repeat: no-repeat;
- box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;
- z-index: 1000;
-
-
-
+  background-image: url("https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1957&q=80");
+  -webkit-background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 40px 80px rgba(255, 255, 255, 1) inset, 0px 1px 1px #000 inset;
+  z-index: 1000;
 }
 .knob-base .edge {
- border: 1px solid black;
- border-radius: 100%;
- position: relative;
- width: 220px;
- height: 220px;
- left: 20px;
- top: 20px;
- background-color: rgba(0,0,0,0.45);
- box-shadow: 0px 0px 10px 2px #000 inset;
+  border: 1px solid black;
+  border-radius: 100%;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  left: 20px;
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px 2px #000 inset;
 }
 .knob-base .edge .knob {
- border: 0px solid black;
- border-radius: 100%;
- position: relative;
- width: 200px;
- height: 200px;
- left: 10px;
- top: 10px;
- background-image: url("/images/galaxyBackground.jpg");
- background-size: 100%;
- background-repeat: no-repeat;
- box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;
- -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
- z-index: 1000
+  border: 0px solid black;
+  border-radius: 100%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  left: 10px;
+  top: 10px;
+  background-image: url("/images/galaxyBackground.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;
+  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  z-index: 1000;
 }
 .knob .center {
- position: absolute;
- border-radius: 100%;
- border: 1px solid rgba(255,255,255,0.75);
- width: 189px;
- height: 189px;
- left: 4px;
- top: 4px;
- visibility: show;
- box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;
-
+  position: absolute;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width: 189px;
+  height: 189px;
+  left: 4px;
+  top: 4px;
+  visibility: show;
+  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,
+    0px 0px 1px 3px rgba(255, 255, 255, 0.8),
+    0px 40px 100px 0px rgba(0, 0, 0, 0.75) inset;
 }
 
 .knob .center .led {
- border: 1px solid #0af;
- border-radius: 4px;
- width: 6px;
- height: 26px;
- position: absolute;
- bottom: 10px;
- left: 50%;
- background-color: #0df;
- box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;
+  border: 1px solid #0af;
+  border-radius: 4px;
+  width: 6px;
+  height: 26px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  background-color: #0df;
+  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;
 }

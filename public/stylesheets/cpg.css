@@ -24,6 +24,17 @@ h3 {
   color: grey;
 }
 
+#centerLogo {
+  padding-right: 100px;
+  padding-top: 140px;
+  margin: auto;
+}
+
+#centerLogoImg {
+  width: 300px;
+  height: 300px;
+}
+
 #ownYourCode {
   padding-bottom: 40px;
 }
@@ -107,7 +118,7 @@ h3 {
 #home {
   /* background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg"); */
   background-image: url("https://images.unsplash.com/photo-1563305145-b64e0c2184aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-  
+
   display: table;
   height: 100%;
   position: fixed;
@@ -255,11 +266,8 @@ h4 {
   text-align: center;
 }
 
-#phone:hover{
-
+#phone:hover {
 }
 
-#email:hover{
-
+#email:hover {
 }
-
