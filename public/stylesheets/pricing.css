@@ -47,6 +47,10 @@ h2 {
   padding-top: 100px;
 }
 
+#designYourOwn {
+  padding-top: 100px;
+}
+
 @media only screen and (max-width: 576px) {
   h2 {
     margin-top: 20px;
@@ -94,4 +98,11 @@ p {
 
 #contactBadge {
   color: white;
+}
+
+/* build your own site */
+
+form {
+  padding-right: 50px;
+  padding-left: 50px;
 }

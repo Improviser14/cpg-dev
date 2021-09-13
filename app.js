@@ -8,7 +8,7 @@ var dotenv = require("dotenv").config(),
   router = express.Router(),
   session = require("express-session"),
   flash = require("connect-flash"),
-  // contactRoutes = require("./routes/contact"),
+  contactRoutes = require("./routes/contact"),
   serveStatic = require("serve-static");
 
 //ssl must be configured on the application level --here
@@ -23,7 +23,7 @@ if (process.env.ENVIRONMENT === "prod") {
 
 app.use(
   bodyParser.urlencoded({
-    extended: false,
+    extended: false
   })
 );
 app.use(bodyParser.json());
