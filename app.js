@@ -48,13 +48,26 @@ app.get("/yourProject", function (req, res) {
   res.render("yourProject");
 });
 
+app.post("/yourProject", function (req, res) {
+  res.render("yourProject");
+});
+
 app.get("/examplesOfOurWork", function (req, res) {
   res.render("examplesOfOurWork");
 });
 
-// app.use("/contactUs", contactRoutes);
+// contact form
+app.get("/", function (req, res) {
+  res.render("contact/yourProject", { page: "youProject" });
+});
 
-app.use(flash());
+// app.post("contact", function (req, res) {
+//   res.render("/");
+// });
+
+// app.use("/contactUs");
+
+// app.use(flash());
 
 if (process.env.ENVIRONMENT === "prod") {
   // sets port 8080 to default or unless otherwise specified in the environment
