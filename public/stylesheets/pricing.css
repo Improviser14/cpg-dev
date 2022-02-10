@@ -13,7 +13,8 @@
 body {
   font-family: Occupied;
   background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg");
-  color: blueviolet;
+  color: black;
+  font-weight: bold;
 }
 
 .jumbotron {
@@ -24,15 +25,21 @@ body {
   padding-top: 80px;
 }
 
-.weBuildCustom {
+/* .weBuildCustom {
   color: black;
-}
+} */
 
 .container {
   padding-top: 100px;
 }
 
 h2 {
+  color: blueviolet;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+h3 {
   color: blueviolet;
   text-align: center;
   padding-top: 60px;
@@ -85,7 +92,8 @@ li a:hover {
 
 p {
   margin-top: 20px;
-  color: blueviolet;
+  /* color: blueviolet; */
+  color: black;
 }
 
 .btn {
