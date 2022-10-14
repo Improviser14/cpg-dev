@@ -73,6 +73,14 @@ canvas.background {
   color: blueviolet;
 }
 
+h1 {
+  color: blueviolet;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-weight: bold;
+}
+
 
 h2 {
   color: blueviolet;
