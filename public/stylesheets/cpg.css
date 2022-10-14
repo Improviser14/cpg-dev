@@ -1,42 +1,142 @@
 html,
+
 body {
   height: 100%;
   width: 100%;
+  background-color: black;
   background-image: url("/images/Portrait.jpg");
   font-family: Occupied, Arial, sans-seriff;
-  color: blueviolet;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  color: limegreen;
+  font-size: x-large;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+#logo {
+  background-image: url("images/white-text-logo.png");
+}
+
+.navTags {
+  text-align: center;
+  align-content: center;
+}
+
+.contactCPG {
+  padding: 10px;
+  color: white;
+  border-style: solid;
+  border-color: white;
+}
+
+#navItems {
+  display: inline-block;
+}
+
+canvas.background {
+  height: 100%;
 }
 
 .background {
   position: absolute;
-  display: block;
+  display: inline-flex;
   top: 0;
   left: 0;
   z-index: 0;
+  /* height: 75vh; */
+}
+
+#bodyContent {
+  background: black;
+  padding-top: 20px;
+}
+
+#bodyParagraph {
+  background: black;
+}
+
+#customWebSolutions {
+  padding-left: 10px;
+  color: blueviolet;
+}
+
+#completeWebSolutions {
+  padding-left: 10px;
+  color: blueviolet;
+}
+
+
+h2 {
+  color: blueviolet;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-weight: bold;
 }
 
 h3 {
   color: blueviolet;
-  margin: 60px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
-.dataHeaders {
-  color: grey;
+h4 {
+  color: blueviolet;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
-#centerLogo {
-  padding-right: 100px;
-  padding-top: 140px;
-  margin: auto;
+h5 {
+  color: blueviolet;
+  padding-bottom: 10px;
 }
 
-#centerLogoImg {
+li a:hover {
+  color: #cc6aff;
+  border-bottom: 2px solid blueviolet;
+  transition: all 0.5s ease-in;
+  padding: 10px;
+}
+
+#otherworkwedo {
+  padding-top: 40px;
+}
+
+
+#customWebsitesAndApps {
+  padding: 20px;
   width: 300px;
-  height: 300px;
+  height: 400px;
 }
 
-#ownYourCode {
+#trilogyImage {
+  background-color: black;
+}
+
+.landingParagragh {
+  color: white;
+  padding-left: 10px;
+  padding-right: 20px;
   padding-bottom: 40px;
+  font-size: larger;
+}
+
+#paragraphHeading {
+  color: white;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
 
 @font-face {
@@ -47,231 +147,62 @@ h3 {
     url("/font/Occupied.woff2") format("woff2"),
     url("/font/Occupied.ttf") format("truetype"),
     url("/font/Occupied.svg#Occupied") format("svg");
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
 }
 
-/*particles.js animated background*/
-/* Header */
-.large-header {
-  position: relative;
-  width: 100%;
-  background: #333;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  z-index: 1;
-}
-
-.main-title {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-}
-
-#whatWeBuild {
-  padding-top: 500px;
-}
-
-.demo-1 .main-title {
-  text-transform: uppercase;
-  font-size: 4.2em;
-  letter-spacing: 0.1em;
-}
-
-.main-title .thin {
-  font-weight: 200;
-}
-
-@media only screen and (max-width: 768px) {
-  .demo-1 .main-title {
-    font-size: 3em;
-  }
-}
-
-/* padded section */
-.pad-section {
-  padding: 50px 0;
-}
-.pad-section img {
-  width: 100%;
-}
-/* vertical-centered text */
-.text-vcenter {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.text-vcenter h1 {
-  font-size: 4.5em;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-/* additional sections */
-#home {
-  /* background-image: url("/images/pawel-czerwinski-qztBRIrU1FM-unsplash.jpg"); */
-  background-image: url("https://images.unsplash.com/photo-1563305145-b64e0c2184aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-
-  display: table;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-}
-
-.navbar-brand {
-  color: blueviolet;
-}
-
-.navbar-brand:hover {
-  color: blueviolet;
-  border-bottom: 2px solid blueviolet;
-  transition: all 0.5s ease-in;
-  padding: 10px;
-}
-
-.text-vcenter :hover {
-  color: blueviolet;
-  transition: all 0.7s ease-in;
-}
-
-.nav li a:hover {
-  color: blueviolet;
-  border-bottom: 2px solid blueviolet;
-  transition: all 0.5s ease-in;
-  padding: 10px;
-}
-
-.display-1 {
-  font-size: 70px;
-  color: #fff;
-}
-
-.display-1:hover {
-  font-size: 85px;
-  color: blueviolet;
-  transition: all 0.5s ease-in;
-}
-
-li :hover {
-  color: blueviolet;
-  transition: all 0.5s ease-in;
-  padding: 10px;
-}
-
-li a:hover {
-  color: blueviolet;
-  border-bottom: 2px solid blueviolet;
-  transition: all 0.5s ease-in;
-  padding: 10px;
-}
-
-.text-center:hover {
-  font-size: 25px;
-  color: blueviolet;
-  transition: all 0.7s ease-in;
-}
-
-#information .panel {
-  opacity: 0.85;
-}
 
 .col img {
   -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
   box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
 }
-#THP_img {
-  -webkit-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 10px 5px -2px rgba(0, 0, 0, 0.75);
-  box-sizing: content-box;
-}
 
-.responsive-image {
-  max-width: 100%;
-}
-
-a:hover {
+.navTags:hover {
   font-size: 20px;
   color: blueviolet;
   transition: all 0.7s ease-in;
 }
 
-@media screen and (min-width: 600px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .col {
-    width: 100%;
-  }
-}
-
-.col {
-  margin: 1rem;
-}
-
-#mern {
-  padding: 80px;
-}
-
-.myImg:hover {
+img:hover {
   opacity: 0.7;
 }
 
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
-h4 {
+.row .PayPal {
   text-align: center;
 }
 
-.anchor-center {
+.PayPal {
   text-align: center;
 }
 
-#phone:hover {
-}
-
-#email:hover {
-}
-
-.form {
+/* form .PayPal {
   padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid limegreen;
+} */
+
+#payPalContainer {
+  border-top: 1px solid limegreen;
+  border-bottom: 1px solid limegreen;
+  padding-bottom: 40px;
+}
+
+/* #paypalTop {
+  padding-top: 60px;
+  border-top: 1px solid limegreen;
+  border-width: .5em;
+} */
+
+#paypalBottom {
+  padding-bottom: 60px;
+}
+
+#bottomLogo {
+  padding-top: 60px;
+}
+
+#copyright {
+  color: blueviolet;
+  text-align: center;
 }
