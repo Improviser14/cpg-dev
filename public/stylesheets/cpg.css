@@ -61,6 +61,7 @@ canvas.background {
 
 #bodyParagraph {
   background: black;
+  text-align: center;
 }
 
 #customWebSolutions {
@@ -210,12 +211,6 @@ img:hover {
   padding-bottom: 40px;
 }
 
-/* #paypalTop {
-  padding-top: 60px;
-  border-top: 1px solid limegreen;
-  border-width: .5em;
-} */
-
 #paypalBottom {
   padding-bottom: 60px;
 }
@@ -227,4 +222,8 @@ img:hover {
 #copyright {
   color: blueviolet;
   text-align: center;
+}
+
+.responsive-image {
+  max-width: 75%;
 }
