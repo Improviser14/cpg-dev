@@ -1,50 +1,21 @@
-<%
-/*
-|--------------------------------------------------------------------------
-| CPG DEVELOPMENT — SITE HEADER
-|--------------------------------------------------------------------------
-|
-| Purpose:
-| - Provides the semantic site-level <header>
-| - Includes the primary navigation
-| - Provides an accessible skip link
-|
-| Page-specific hero content does NOT belong here.
-| Each page will have its own <main> and hero/H1.
-|
-|--------------------------------------------------------------------------
-*/
+<header class="cpg-header">
+  <div class="cpg-header__inner">
 
-const headerPath =
-  typeof currentPath !== 'undefined'
-    ? currentPath
-    : '';
-%>
+    <a
+      href="/"
+      class="cpg-header__brand"
+      aria-label="CPG Development home"
+    >
+      <img
+        src="/images/NewLogo-AI.png"
+        alt="CPG Development - Digital Intelligence, AI and Strategy"
+        class="cpg-header__logo"
+        width="900"
+        height="184"
+      >
+    </a>
 
+    <%- include('nav') %>
 
-<!-- ==================================================
-     ACCESSIBILITY — SKIP LINK
-================================================== -->
-
-<a
-  class="skip-link"
-  href="#main-content"
->
-  Skip to main content
-</a>
-
-
-<!-- ==================================================
-     SITE HEADER
-================================================== -->
-
-<header
-  class="site-header"
-  id="site-header"
->
-
-  <%- include('nav', {
-    currentPath: headerPath
-  }) %>
-
+  </div>
 </header>
