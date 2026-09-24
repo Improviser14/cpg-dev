@@ -1,0 +1,200 @@
+<%
+/*
+|--------------------------------------------------------------------------
+| CPG DEVELOPMENT — SITE FOOTER
+|--------------------------------------------------------------------------
+|
+| Purpose:
+| - Reinforce CPG Development's primary service areas
+| - Provide useful secondary navigation
+| - Create consistent internal links across the site
+| - Provide contact and business information
+|
+|--------------------------------------------------------------------------
+*/
+
+const currentYear = new Date().getFullYear();
+%>
+
+
+<footer
+  class="site-footer"
+  id="site-footer"
+>
+
+  <div class="container">
+
+    <div class="site-footer__grid">
+
+
+      <!-- ==================================================
+           BRAND / POSITIONING
+      ================================================== -->
+
+      <div class="site-footer__brand">
+
+        <a
+          href="/"
+          class="site-footer__logo-link"
+          aria-label="CPG Development home"
+        >
+          <img
+            src="/images/white-text-logo.png"
+            alt="CPG Development"
+            class="site-footer__logo"
+            width="900"
+            height="184"
+            loading="lazy"
+          >
+        </a>
+
+        <p class="site-footer__tagline">
+          Digital Intelligence. AI Visibility. Measurable Growth.
+        </p>
+
+        <p class="site-footer__description">
+          CPG Development helps organizations turn digital data
+          into better business decisions through analytics,
+          AI visibility, optimization and implementation.
+        </p>
+
+      </div>
+
+
+      <!-- ==================================================
+           SERVICES
+      ================================================== -->
+
+      <nav
+        class="site-footer__section"
+        aria-label="Services"
+      >
+
+        <h2 class="site-footer__heading">
+          Services
+        </h2>
+
+        <ul class="site-footer__links">
+
+          <li>
+            <a href="/services/digital-intelligence">
+              Digital Intelligence
+            </a>
+          </li>
+
+          <li>
+            <a href="/services/ai-visibility-geo">
+              AI Visibility &amp; GEO
+            </a>
+          </li>
+
+          <li>
+            <a href="/services/optimization-development">
+              Optimization &amp; Development
+            </a>
+          </li>
+
+          <li>
+            <a href="/digital-performance-audit">
+              Digital Performance Audit
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!-- ==================================================
+           COMPANY
+      ================================================== -->
+
+      <nav
+        class="site-footer__section"
+        aria-label="Company"
+      >
+
+        <h2 class="site-footer__heading">
+          CPG Development
+        </h2>
+
+        <ul class="site-footer__links">
+
+          <li>
+            <a href="/work">
+              Selected Work
+            </a>
+          </li>
+
+          <li>
+            <a href="/about">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="/contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!-- ==================================================
+           CONTACT / CTA
+      ================================================== -->
+
+      <div class="site-footer__section site-footer__contact">
+
+        <h2 class="site-footer__heading">
+          Start With Your Data
+        </h2>
+
+        <p>
+          Find out what your digital data is telling you,
+          where opportunities are being missed and what
+          to improve next.
+        </p>
+
+        <a
+          href="/digital-performance-audit"
+          class="site-footer__cta"
+        >
+          Get a Digital Performance Audit
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         FOOTER BOTTOM
+    ================================================== -->
+
+    <div class="site-footer__bottom">
+
+      <p class="site-footer__copyright">
+        &copy; <%= currentYear %> CPG Development.
+        All rights reserved.
+      </p>
+
+      <nav
+        class="site-footer__legal"
+        aria-label="Legal"
+      >
+
+        <a href="/privacy">
+          Privacy
+        </a>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,50 @@
+<%
+/*
+|--------------------------------------------------------------------------
+| CPG DEVELOPMENT — SITE HEADER
+|--------------------------------------------------------------------------
+|
+| Purpose:
+| - Provides the semantic site-level <header>
+| - Includes the primary navigation
+| - Provides an accessible skip link
+|
+| Page-specific hero content does NOT belong here.
+| Each page will have its own <main> and hero/H1.
+|
+|--------------------------------------------------------------------------
+*/
+
+const headerPath =
+  typeof currentPath !== 'undefined'
+    ? currentPath
+    : '';
+%>
+
+
+<!-- ==================================================
+     ACCESSIBILITY — SKIP LINK
+================================================== -->
+
+<a
+  class="skip-link"
+  href="#main-content"
+>
+  Skip to main content
+</a>
+
+
+<!-- ==================================================
+     SITE HEADER
+================================================== -->
+
+<header
+  class="site-header"
+  id="site-header"
+>
+
+  <%- include('nav', {
+    currentPath: headerPath
+  }) %>
+
+</header>

@@ -1,46 +1,101 @@
-var dotenv = require("dotenv").config(),
-  express = require("express"),
-  app = express(),
-  bodyParser = require("body-parser"),
-  request = require("request"),
-  cookieParser = require("cookie-parser"),
-  router = express.Router(),
-  session = require("express-session"),
-  serveStatic = require("serve-static");
+require("dotenv").config();
 
-//ssl must be configured on the application level --here
-//uncomment this block when deploying see code at the bottom of this file
+const express = require("express");
+const path = require("path");
+
+const app = express();
+
+
+// --------------------------------------------------
+// PRODUCTION HTTPS REDIRECT
+// --------------------------------------------------
+
 if (process.env.ENVIRONMENT === "prod") {
-  app.use(function (req, res, next) {
+  app.use((req, res, next) => {
     if (req.get("X-Forwarded-Proto") !== "https") {
-      res.redirect("https://" + req.get("Host") + req.url);
-    } else next();
+      return res.redirect(301, `https://${req.get("host")}${req.originalUrl}`);
+    }
+
+    next();
   });
 }
 
-app.use(
-  bodyParser.urlencoded({
-    extended: false
-  })
-);
-app.use(bodyParser.json());
-app.use(cookieParser());
 
+// --------------------------------------------------
+// APPLICATION CONFIGURATION
+// --------------------------------------------------
 
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-app.use("/", router);
 
-app.use(express.static("public/"));
+// --------------------------------------------------
+// MIDDLEWARE
+// --------------------------------------------------
 
-app.get("/", function (req, res) {
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
+
+
+// --------------------------------------------------
+// PAGE ROUTES
+// --------------------------------------------------
+
+app.get("/", (req, res) => {
   res.render("cpg");
 });
 
+app.get("/services/digital-intelligence", (req, res) => {
+  res.render("digital-intelligence");
+});
+
+app.get("/services/ai-visibility-geo", (req, res) => {
+  res.render("ai-visibility-geo");
+});
+
+app.get("/services/optimization-development", (req, res) => {
+  res.render("optimization-development");
+});
+
+app.get("/digital-performance-audit", (req, res) => {
+  res.render("digital-performance-audit");
+});
+
+app.get("/work", (req, res) => {
+  res.render("work");
+});
+
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
+
+// --------------------------------------------------
+// 404
+// --------------------------------------------------
+
+app.use((req, res) => {
+  res.status(404).send("Page not found");
+});
+
+
+// --------------------------------------------------
+// START SERVER
+// --------------------------------------------------
+
+const PORT = process.env.PORT || 8080;
+
 if (process.env.ENVIRONMENT === "prod") {
-  // sets port 8080 to default or unless otherwise specified in the environment
-  app.set("port", process.env.PORT || 80);
-  app.listen(app.get("port"));
+  app.listen(PORT, () => {
+    console.log(`CPG Development running on port ${PORT}`);
+  });
 } else {
-  app.listen(8080, "127.0.0.1");
+  app.listen(PORT, "127.0.0.1", () => {
+    console.log(`CPG Development running at http://127.0.0.1:${PORT}`);
+  });
 }

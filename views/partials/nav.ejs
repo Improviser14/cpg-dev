@@ -1,0 +1,173 @@
+<%
+/*
+|--------------------------------------------------------------------------
+| CPG DEVELOPMENT — PRIMARY NAVIGATION
+|--------------------------------------------------------------------------
+|
+| "currentPath" can be passed by the page or supplied globally later.
+| It is used only to identify the active navigation item.
+|
+|--------------------------------------------------------------------------
+*/
+
+const navPath =
+  typeof currentPath !== 'undefined'
+    ? currentPath
+    : '';
+%>
+
+<nav
+  class="cpg-nav"
+  id="primary-navigation"
+  aria-label="Primary navigation"
+>
+  <div class="container">
+
+    <div class="cpg-nav__inner">
+
+      <!-- ==================================================
+           BRAND
+      ================================================== -->
+
+      <a
+        class="cpg-nav__brand"
+        href="/"
+        aria-label="CPG Development home"
+      >
+        <img
+          src="/images/white-text-logo.png"
+          alt="CPG Development"
+          class="cpg-nav__logo"
+          width="900"
+          height="184"
+        >
+      </a>
+
+
+      <!-- ==================================================
+           MOBILE NAVIGATION BUTTON
+      ================================================== -->
+
+      <button
+        class="cpg-nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation-menu"
+        aria-label="Open navigation menu"
+      >
+        <span class="cpg-nav__toggle-line"></span>
+        <span class="cpg-nav__toggle-line"></span>
+        <span class="cpg-nav__toggle-line"></span>
+      </button>
+
+
+      <!-- ==================================================
+           PRIMARY NAVIGATION LINKS
+      ================================================== -->
+
+      <div
+        class="cpg-nav__menu"
+        id="primary-navigation-menu"
+      >
+
+        <ul class="cpg-nav__list">
+
+          <li class="cpg-nav__item">
+
+            <a
+              href="/services/digital-intelligence"
+              class="cpg-nav__link<%= navPath === '/services/digital-intelligence' ? ' is-active' : '' %>"
+              <%- navPath === '/services/digital-intelligence'
+                ? 'aria-current="page"'
+                : ''
+              %>
+            >
+              Digital Intelligence
+            </a>
+
+          </li>
+
+
+          <li class="cpg-nav__item">
+
+            <a
+              href="/services/ai-visibility-geo"
+              class="cpg-nav__link<%= navPath === '/services/ai-visibility-geo' ? ' is-active' : '' %>"
+              <%- navPath === '/services/ai-visibility-geo'
+                ? 'aria-current="page"'
+                : ''
+              %>
+            >
+              AI Visibility &amp; GEO
+            </a>
+
+          </li>
+
+
+          <li class="cpg-nav__item">
+
+            <a
+              href="/services/optimization-development"
+              class="cpg-nav__link<%= navPath === '/services/optimization-development' ? ' is-active' : '' %>"
+              <%- navPath === '/services/optimization-development'
+                ? 'aria-current="page"'
+                : ''
+              %>
+            >
+              Optimization &amp; Development
+            </a>
+
+          </li>
+
+
+          <li class="cpg-nav__item">
+
+            <a
+              href="/work"
+              class="cpg-nav__link<%= navPath === '/work' ? ' is-active' : '' %>"
+              <%- navPath === '/work'
+                ? 'aria-current="page"'
+                : ''
+              %>
+            >
+              Work
+            </a>
+
+          </li>
+
+
+          <li class="cpg-nav__item">
+
+            <a
+              href="/about"
+              class="cpg-nav__link<%= navPath === '/about' ? ' is-active' : '' %>"
+              <%- navPath === '/about'
+                ? 'aria-current="page"'
+                : ''
+              %>
+            >
+              About
+            </a>
+
+          </li>
+
+        </ul>
+
+
+        <!-- ==================================================
+             PRIMARY CTA
+        ================================================== -->
+
+        <a
+          href="/digital-performance-audit"
+          class="cpg-nav__cta"
+        >
+          Get a Digital Performance Audit
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</nav>
