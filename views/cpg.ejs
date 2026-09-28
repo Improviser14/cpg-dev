@@ -2,64 +2,386 @@
 <html lang="en">
 
 <head>
-
   <%- include('partials/head', {
-    title: 'CPG Development | Digital Intelligence, AI & Strategy',
-    description: 'CPG Development helps organizations turn digital data into better business decisions through digital intelligence, AI visibility, analytics, optimization and development.',
-    canonical: 'https://cpg.dev/'
+    title: 'CPG Development | Digital Intelligence, AI Visibility & Strategy',
+    description: 'CPG Development helps organizations turn digital data into better business decisions through digital analytics, AI visibility, GEO, optimization and technical implementation.',
+    canonical: 'https://cpg.dev/',
+    pageSchema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://cpg.dev/#webpage",
+      "url": "https://cpg.dev/",
+      "name": "CPG Development | Digital Intelligence, AI Visibility & Strategy",
+      "description": "CPG Development helps organizations turn digital data into better business decisions through digital analytics, AI visibility, GEO, optimization and technical implementation.",
+      "isPartOf": {
+        "@id": "https://cpg.dev/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Digital Analytics"
+        },
+        {
+          "@type": "Thing",
+          "name": "AI Visibility"
+        },
+        {
+          "@type": "Thing",
+          "name": "Generative Engine Optimization"
+        },
+        {
+          "@type": "Thing",
+          "name": "Digital Strategy"
+        },
+        {
+          "@type": "Thing",
+          "name": "Web Development"
+        }
+      ]
+    }
   }) %>
-
 </head>
 
 <body>
 
-  <%- include('partials/header', {
-    currentPath: '/'
-  }) %>
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
 
+  <%- include('partials/header') %>
 
   <main id="main-content">
 
-
-    <!-- ==================================================
+    <!-- =========================================================
          HERO
-    ================================================== -->
+    ========================================================== -->
 
-    <section class="hero">
+    <section class="cpg-hero" aria-labelledby="hero-heading">
 
-      <div class="container">
+      <div class="cpg-container">
 
-        <div class="hero__content">
+        <p class="cpg-hero__eyebrow">
+          Digital Intelligence
+          <span aria-hidden="true">•</span>
+          AI
+          <span aria-hidden="true">•</span>
+          Strategy
+        </p>
 
-          <p class="eyebrow">
-            Digital Intelligence • AI • Strategy
-          </p>
+        <h1 id="hero-heading" class="cpg-hero__title">
+          Turn Digital Data Into<br>
+          Better Business Decisions
+        </h1>
 
-          <h1>
-            Turn Your Digital Data Into Better Business Decisions
-          </h1>
+        <p class="cpg-hero__description">
+          Understand what's working, where you're being discovered
+          and what to improve next.
+        </p>
 
-          <p class="hero__lead">
-            CPG Development helps organizations understand digital
-            performance, measure visibility across search and AI,
-            identify opportunities and turn those insights into
-            measurable improvements.
-          </p>
+        <div class="cpg-actions">
 
-          <div class="hero__actions">
+          <a
+            href="/digital-performance-audit"
+            class="cpg-button cpg-button--primary"
+          >
+            Get a Digital Performance Audit
+          </a>
+
+          <a
+            href="#services"
+            class="cpg-button cpg-button--secondary"
+          >
+            Explore Our Services
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SERVICES
+    ========================================================== -->
+
+    <section
+      id="services"
+      class="cpg-section cpg-section--services"
+      aria-labelledby="services-heading"
+    >
+
+      <div class="cpg-container">
+
+        <p class="cpg-section__eyebrow">
+          What We Do
+        </p>
+
+        <h2 id="services-heading">
+          From Insight to Action
+        </h2>
+
+        <p class="cpg-section__intro">
+          Measure performance. Understand visibility.
+          Find opportunities. Make improvements.
+        </p>
+
+
+        <div class="cpg-service-grid">
+
+          <!-- DIGITAL INTELLIGENCE -->
+
+          <article class="cpg-service-card">
+
+            <div class="cpg-service-card__number" aria-hidden="true">
+              01
+            </div>
+
+            <h3>
+              Digital Intelligence
+            </h3>
+
+            <p>
+              Turn analytics and performance data into clear,
+              actionable business intelligence.
+            </p>
+
+            <ul>
+              <li>Digital analytics</li>
+              <li>Conversion tracking</li>
+              <li>Executive dashboards</li>
+              <li>Performance measurement</li>
+            </ul>
+
+            <a
+              href="/services/digital-intelligence"
+              class="cpg-text-link"
+            >
+              Explore Digital Intelligence
+              <span aria-hidden="true">→</span>
+            </a>
+
+          </article>
+
+
+          <!-- AI VISIBILITY -->
+
+          <article class="cpg-service-card">
+
+            <div class="cpg-service-card__number" aria-hidden="true">
+              02
+            </div>
+
+            <h3>
+              AI Visibility &amp; GEO
+            </h3>
+
+            <p>
+              Understand how your organization appears across
+              AI-driven search and generative answer platforms.
+            </p>
+
+            <ul>
+              <li>AI referral measurement</li>
+              <li>Generative engine visibility</li>
+              <li>Search and content analysis</li>
+              <li>GEO strategy</li>
+            </ul>
+
+            <a
+              href="/services/ai-visibility-geo"
+              class="cpg-text-link"
+            >
+              Explore AI Visibility &amp; GEO
+              <span aria-hidden="true">→</span>
+            </a>
+
+          </article>
+
+
+          <!-- OPTIMIZATION -->
+
+          <article class="cpg-service-card">
+
+            <div class="cpg-service-card__number" aria-hidden="true">
+              03
+            </div>
+
+            <h3>
+              Optimization &amp; Development
+            </h3>
+
+            <p>
+              Turn recommendations into working improvements
+              across your digital ecosystem.
+            </p>
+
+            <ul>
+              <li>Website optimization</li>
+              <li>Analytics implementation</li>
+              <li>UX improvements</li>
+              <li>Custom development</li>
+            </ul>
+
+            <a
+              href="/services/optimization-development"
+              class="cpg-text-link"
+            >
+              Explore Optimization &amp; Development
+              <span aria-hidden="true">→</span>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         DIFFERENTIATOR
+    ========================================================== -->
+
+    <section
+      class="cpg-section cpg-section--process"
+      aria-labelledby="process-heading"
+    >
+
+      <div class="cpg-container">
+
+        <p class="cpg-section__eyebrow">
+          Insight to Implementation
+        </p>
+
+        <h2 id="process-heading">
+          We Don't Just Find Problems.<br>
+          We Fix Them.
+        </h2>
+
+        <p class="cpg-section__intro">
+          Strategy matters more when it can be implemented.
+          CPG connects measurement, analysis and execution.
+        </p>
+
+
+        <ol class="cpg-process">
+
+          <li class="cpg-process__item">
+
+            <span class="cpg-process__number">
+              01
+            </span>
+
+            <div>
+              <h3>Measure</h3>
+              <p>Collect the right digital signals.</p>
+            </div>
+
+          </li>
+
+
+          <li class="cpg-process__item">
+
+            <span class="cpg-process__number">
+              02
+            </span>
+
+            <div>
+              <h3>Understand</h3>
+              <p>Find patterns, friction and opportunity.</p>
+            </div>
+
+          </li>
+
+
+          <li class="cpg-process__item">
+
+            <span class="cpg-process__number">
+              03
+            </span>
+
+            <div>
+              <h3>Recommend</h3>
+              <p>Prioritize actions based on evidence.</p>
+            </div>
+
+          </li>
+
+
+          <li class="cpg-process__item">
+
+            <span class="cpg-process__number">
+              04
+            </span>
+
+            <div>
+              <h3>Implement</h3>
+              <p>Turn recommendations into working solutions.</p>
+            </div>
+
+          </li>
+
+
+          <li class="cpg-process__item">
+
+            <span class="cpg-process__number">
+              05
+            </span>
+
+            <div>
+              <h3>Measure Again</h3>
+              <p>See what changed and what comes next.</p>
+            </div>
+
+          </li>
+
+        </ol>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         DIGITAL PERFORMANCE AUDIT
+    ========================================================== -->
+
+    <section
+      class="cpg-section cpg-section--audit"
+      aria-labelledby="audit-heading"
+    >
+
+      <div class="cpg-container">
+
+        <div class="cpg-feature-panel">
+
+          <div class="cpg-feature-panel__content">
+
+            <p class="cpg-section__eyebrow">
+              Start Here
+            </p>
+
+            <h2 id="audit-heading">
+              Digital Performance Audit
+            </h2>
+
+            <p>
+              Find out what your digital ecosystem is telling you,
+              where opportunities are being missed and what deserves
+              attention first.
+            </p>
+
+          </div>
+
+          <div class="cpg-feature-panel__action">
 
             <a
               href="/digital-performance-audit"
-              class="button button--primary"
+              class="cpg-button cpg-button--primary"
             >
-              Get a Digital Performance Audit
-            </a>
-
-            <a
-              href="#services"
-              class="button button--secondary"
-            >
-              Explore Our Services
+              Get Your Audit
             </a>
 
           </div>
@@ -71,252 +393,42 @@
     </section>
 
 
-    <!-- ==================================================
-         SERVICES
-    ================================================== -->
+    <!-- =========================================================
+         SELECTED WORK
+    ========================================================== -->
 
     <section
-      class="section services"
-      id="services"
+      class="cpg-section cpg-section--work"
+      aria-labelledby="work-heading"
     >
 
-      <div class="container">
+      <div class="cpg-container">
 
-        <div class="section-heading">
+        <div class="cpg-work-callout">
 
-          <p class="eyebrow">
-            What We Do
-          </p>
+          <div>
 
-          <h2>
-            From Digital Data to Action
-          </h2>
-
-          <p>
-            CPG combines analytics, AI visibility, strategy and
-            technical implementation to help organizations understand
-            what is happening across their digital ecosystem and what
-            to do next.
-          </p>
-
-        </div>
-
-
-        <div class="service-grid">
-
-
-          <article class="service-card">
-
-            <h3>
-              Digital Intelligence
-            </h3>
-
-            <p>
-              Turn analytics and digital performance data into
-              understandable insights that support better business
-              decisions.
+            <p class="cpg-section__eyebrow">
+              Selected Work
             </p>
 
-            <ul>
-              <li>Digital analytics</li>
-              <li>Conversion tracking</li>
-              <li>Executive dashboards</li>
-              <li>Performance measurement</li>
-            </ul>
-
-            <a href="/services/digital-intelligence">
-              Explore Digital Intelligence
-            </a>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <h3>
-              AI Visibility &amp; GEO
-            </h3>
+            <h2 id="work-heading">
+              Strategy Backed by Implementation
+            </h2>
 
             <p>
-              Understand how your organization is discovered,
-              represented and referenced across AI-driven search
-              and generative answer platforms.
+              Analytics, digital strategy and technical execution
+              brought together to solve real business problems.
             </p>
 
-            <ul>
-              <li>AI referral measurement</li>
-              <li>Generative engine visibility</li>
-              <li>Search and content analysis</li>
-              <li>GEO strategy</li>
-            </ul>
-
-            <a href="/services/ai-visibility-geo">
-              Explore AI Visibility &amp; GEO
-            </a>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <h3>
-              Optimization &amp; Development
-            </h3>
-
-            <p>
-              Turn recommendations into working improvements across
-              websites, analytics implementations and digital
-              experiences.
-            </p>
-
-            <ul>
-              <li>Website optimization</li>
-              <li>Analytics implementation</li>
-              <li>UX improvements</li>
-              <li>Custom development</li>
-            </ul>
-
-            <a href="/services/optimization-development">
-              Explore Optimization &amp; Development
-            </a>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         DIFFERENTIATOR
-    ================================================== -->
-
-    <section class="section insight-to-action">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-            Insight to Implementation
-          </p>
-
-          <h2>
-            We Don't Just Find Problems. We Fix Them.
-          </h2>
-
-          <p>
-            Analytics are valuable only when they lead to better
-            decisions. CPG connects measurement, analysis, strategy
-            and implementation so insights can become measurable
-            improvements.
-          </p>
-
-        </div>
-
-
-        <ol class="process">
-
-          <li>
-            <strong>Measure</strong>
-            <span>Collect the right digital signals.</span>
-          </li>
-
-          <li>
-            <strong>Understand</strong>
-            <span>Identify patterns, friction and opportunity.</span>
-          </li>
-
-          <li>
-            <strong>Recommend</strong>
-            <span>Prioritize actions based on evidence.</span>
-          </li>
-
-          <li>
-            <strong>Implement</strong>
-            <span>Turn recommendations into working solutions.</span>
-          </li>
-
-          <li>
-            <strong>Measure Again</strong>
-            <span>Determine what changed and what comes next.</span>
-          </li>
-
-        </ol>
-
-      </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         DIGITAL PERFORMANCE AUDIT
-    ================================================== -->
-
-    <section class="section audit-callout">
-
-      <div class="container">
-
-        <div class="audit-callout__content">
-
-          <p class="eyebrow">
-            Start Here
-          </p>
-
-          <h2>
-            Digital Performance Audit
-          </h2>
-
-          <p>
-            Get a focused assessment of your analytics, search
-            visibility, AI visibility and digital experience.
-            We'll identify what's working, where opportunities
-            are being missed and what deserves attention first.
-          </p>
+          </div>
 
           <a
-            href="/digital-performance-audit"
-            class="button button--primary"
+            href="/work"
+            class="cpg-text-link cpg-text-link--large"
           >
-            Learn About the Audit
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         SELECTED WORK
-    ================================================== -->
-
-    <section class="section selected-work">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-            Selected Work
-          </p>
-
-          <h2>
-            Strategy Backed by Implementation
-          </h2>
-
-          <p>
-            CPG brings together analytics, web development,
-            digital strategy and technical problem solving to
-            improve how organizations measure and manage their
-            digital presence.
-          </p>
-
-          <a href="/work">
             View Selected Work
+            <span aria-hidden="true">→</span>
           </a>
 
         </div>
@@ -326,45 +438,56 @@
     </section>
 
 
-    <!-- ==================================================
+    <!-- =========================================================
          FINAL CTA
-    ================================================== -->
+    ========================================================== -->
 
-    <section class="section final-cta">
+    <section
+      class="cpg-section cpg-section--final-cta"
+      aria-labelledby="final-cta-heading"
+    >
 
-      <div class="container">
+      <div class="cpg-container">
 
-        <div class="final-cta__content">
+        <p class="cpg-section__eyebrow">
+          Ready to See What's Really Happening?
+        </p>
 
-          <h2>
-            Make Your Digital Data More Useful
-          </h2>
+        <h2 id="final-cta-heading">
+          Make Your Digital Data<br>
+          More Useful.
+        </h2>
 
-          <p>
-            Start by understanding what your digital ecosystem
-            is telling you and where the strongest opportunities
-            for improvement exist.
-          </p>
+        <p class="cpg-section__intro">
+          Start with a clear picture of performance,
+          visibility and opportunity.
+        </p>
+
+        <div class="cpg-actions">
 
           <a
             href="/digital-performance-audit"
-            class="button button--primary"
+            class="cpg-button cpg-button--primary"
           >
             Get a Digital Performance Audit
           </a>
 
+          <a
+            href="/contact"
+            class="cpg-button cpg-button--secondary"
+          >
+            Contact CPG
+          </a>
+
         </div>
 
       </div>
 
     </section>
 
-
   </main>
 
-
   <%- include('partials/footer') %>
-
 
 </body>
 
