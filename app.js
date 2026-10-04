@@ -62,8 +62,10 @@ app.get("/digital-performance-audit", (req, res) => {
   res.render("digital-performance-audit");
 });
 
-app.get("/work", (req, res) => {
-  res.render("work");
+// Inside CPG turns the site itself into a living case study,
+// showing the architecture, measurement and optimization behind CPG.dev.
+app.get("/inside-cpg", (req, res) => {
+  res.render("inside-cpg");
 });
 
 app.get("/about", (req, res) => {
