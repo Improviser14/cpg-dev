@@ -1977,8 +1977,6 @@
   
   }
   
-  
-  
   .cpg-hero__description {
   
     max-width: 760px;
@@ -1986,3 +1984,1140 @@
     font-size: 1.15rem;
   
   }
+
+  /* ============================================================
+   INSIDE CPG
+   Living case study / system visualization
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   HERO INTRO
+   Keeps the opening centered and editorial while providing
+   a second level of context beneath the primary hero message.
+   ------------------------------------------------------------ */
+
+.cpg-inside-hero__intro {
+  max-width: 760px;
+  margin: -12px auto 0;
+  color: var(--cpg-muted);
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+
+/* ------------------------------------------------------------
+   SYSTEM OVERVIEW
+   The architecture visualization is intentionally wider than
+   normal reading content so it feels like a system diagram,
+   not another row of marketing cards.
+   ------------------------------------------------------------ */
+
+.cpg-inside-system {
+  position: relative;
+  overflow: hidden;
+}
+
+.cpg-inside-system .cpg-section__intro {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/* ------------------------------------------------------------
+   SYSTEM MAP
+   Six connected stages communicate that the site operates as
+   one measurable system rather than a collection of features.
+   ------------------------------------------------------------ */
+
+.cpg-system-map {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 64px;
+}
+
+
+/* ------------------------------------------------------------
+   SYSTEM NODE
+   Restrained glass treatment keeps the diagram technical and
+   modern without turning it into a flashy dashboard.
+   ------------------------------------------------------------ */
+
+.cpg-system-node {
+  position: relative;
+
+  min-height: 150px;
+  padding: 24px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  border: 1px solid var(--cpg-border);
+  border-radius: var(--cpg-radius);
+
+  text-align: center;
+
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    background 220ms ease;
+}
+
+.cpg-system-node:hover {
+  transform: translateY(-4px);
+  border-color: var(--cpg-purple-border);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(138, 43, 226, 0.11),
+      rgba(255, 255, 255, 0.02)
+    );
+}
+
+
+/* Number */
+
+.cpg-system-node__number {
+  margin-bottom: 18px;
+
+  color: var(--cpg-purple-light);
+
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: var(--weight-bold);
+
+  letter-spacing: 0.16em;
+}
+
+
+/* Layer name */
+
+.cpg-system-node strong {
+  color: var(--cpg-white);
+
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: -0.02em;
+}
+
+
+/* Technical description */
+
+.cpg-system-node > span:last-child {
+  margin-top: 7px;
+
+  color: var(--cpg-muted);
+
+  font-family: var(--font-ui);
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+
+/* ------------------------------------------------------------
+   CONNECTORS
+   These visually turn the individual nodes into a system.
+   ------------------------------------------------------------ */
+
+.cpg-system-map__connector {
+  color: rgba(166, 77, 255, 0.7);
+
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  font-weight: var(--weight-medium);
+
+  user-select: none;
+}
+
+
+/* ------------------------------------------------------------
+   PRINCIPLE
+   A quieter editorial moment after the technical visualization.
+   ------------------------------------------------------------ */
+
+.cpg-inside-principle__content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cpg-inside-principle__content p:not(.cpg-section__eyebrow) {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--cpg-muted);
+
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+
+/* ------------------------------------------------------------
+   RESPONSIVE SYSTEM MAP
+   On smaller screens the architecture becomes a vertical flow.
+   The relationship between layers remains visually explicit.
+   ------------------------------------------------------------ */
+
+   @media (max-width: 760px) {
+
+  .cpg-system-map {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+  }
+
+  .cpg-system-node {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .cpg-system-map__connector {
+    transform: rotate(90deg);
+    justify-self: center;
+  }
+
+  /* Inside CPG section labels are intentionally centered.
+   This keeps the page's major narrative markers aligned
+   with the system-oriented presentation. */
+
+  .cpg-inside-system .cpg-section__eyebrow {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* ============================================================
+   INSIDE CPG — EVIDENCE SYSTEM
+   Turns technical implementation decisions into visible proof.
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   EVIDENCE SECTION
+   ------------------------------------------------------------ */
+
+.cpg-inside-evidence {
+  background: #050506;
+  border-top: 1px solid var(--cpg-border);
+  border-bottom: 1px solid var(--cpg-border);
+}
+
+
+/* Main technical panel */
+
+.cpg-evidence-panel {
+  position: relative;
+  overflow: hidden;
+
+  padding: clamp(36px, 5vw, 64px);
+
+  background:
+    radial-gradient(
+      circle at 90% 5%,
+      rgba(138, 43, 226, 0.10),
+      transparent 28%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.01)
+    );
+
+  border: 1px solid var(--cpg-border);
+  border-radius: 18px;
+}
+
+
+/* Small technical accent line */
+
+.cpg-evidence-panel::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 64px;
+
+  width: 120px;
+  height: 1px;
+
+  background: var(--cpg-purple-light);
+}
+
+
+/* ------------------------------------------------------------
+   PANEL HEADER
+   ------------------------------------------------------------ */
+
+.cpg-evidence-header {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 760px);
+  gap: 30px;
+
+  align-items: start;
+
+  margin-bottom: 60px;
+}
+
+
+/* Large layer number */
+
+.cpg-evidence-index {
+  color: rgba(166, 77, 255, 0.55);
+
+  font-family: var(--font-ui);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: var(--weight-semibold);
+
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+
+/* Heading content */
+
+.cpg-evidence-heading {
+  max-width: 760px;
+}
+
+
+.cpg-evidence-label {
+  margin: 0 0 12px;
+
+  color: var(--cpg-purple-light);
+
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: var(--weight-bold);
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+
+.cpg-evidence-heading h2 {
+  margin: 0 0 20px;
+
+  color: var(--cpg-white);
+
+  font-family: var(--font-ui);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: var(--weight-semibold);
+
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+
+  text-align: left;
+}
+
+
+.cpg-evidence-heading > p:last-child {
+  max-width: 700px;
+  margin: 0;
+
+  color: var(--cpg-muted);
+
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+
+/* ------------------------------------------------------------
+   EVIDENCE GRID
+   Left = implementation
+   Right = business impact
+   ------------------------------------------------------------ */
+
+.cpg-evidence-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: 64px;
+
+  padding-top: 48px;
+
+  border-top: 1px solid var(--cpg-border);
+}
+
+
+.cpg-evidence-column__label {
+  margin: 0 0 28px;
+
+  color: var(--cpg-muted);
+
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: var(--weight-bold);
+
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+
+/* ------------------------------------------------------------
+   IMPLEMENTATION LIST
+   ------------------------------------------------------------ */
+
+.cpg-evidence-list {
+  display: grid;
+  gap: 0;
+}
+
+
+.cpg-evidence-item {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 20px;
+
+  padding: 24px 0;
+
+  border-top: 1px solid var(--cpg-border);
+}
+
+
+.cpg-evidence-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+
+.cpg-evidence-item__number {
+  padding-top: 2px;
+
+  color: var(--cpg-purple-light);
+
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: var(--weight-bold);
+
+  letter-spacing: 0.12em;
+}
+
+
+.cpg-evidence-item strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--cpg-white);
+
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: var(--weight-semibold);
+}
+
+
+.cpg-evidence-item p {
+  max-width: 520px;
+  margin: 0;
+
+  color: var(--cpg-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+
+/* ------------------------------------------------------------
+   BUSINESS IMPACT
+   ------------------------------------------------------------ */
+
+.cpg-evidence-impact {
+  padding: 30px;
+
+  background: rgba(138, 43, 226, 0.055);
+
+  border: 1px solid var(--cpg-purple-border);
+  border-radius: var(--cpg-radius);
+}
+
+
+.cpg-evidence-impact h3 {
+  margin: 0 0 18px;
+
+  color: var(--cpg-white);
+
+  font-family: var(--font-ui);
+  font-size: 1.35rem;
+  font-weight: var(--weight-semibold);
+
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+
+.cpg-evidence-impact > p {
+  margin-bottom: 28px;
+
+  color: var(--cpg-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+
+.cpg-impact-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.cpg-impact-list li {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 8px;
+
+  padding: 10px 0;
+
+  color: var(--cpg-text);
+
+  font-size: 0.88rem;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.cpg-impact-list li span {
+  color: var(--cpg-purple-light);
+}
+
+
+/* ------------------------------------------------------------
+   LIVE EVIDENCE
+   This is where the page begins proving its own claims.
+   ------------------------------------------------------------ */
+
+.cpg-evidence-proof {
+  margin-top: 64px;
+  padding-top: 48px;
+
+  border-top: 1px solid var(--cpg-border);
+}
+
+
+.cpg-evidence-proof__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin-bottom: 32px;
+}
+
+
+.cpg-evidence-proof__header h3 {
+  margin: 0;
+
+  color: var(--cpg-white);
+
+  font-family: var(--font-ui);
+  font-size: 1.35rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: -0.025em;
+}
+
+
+/* Live indicator */
+
+.cpg-live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 7px 11px;
+
+  color: var(--cpg-muted);
+
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--cpg-border);
+  border-radius: 999px;
+}
+
+
+.cpg-live-indicator__dot {
+  width: 7px;
+  height: 7px;
+
+  background: var(--cpg-purple-light);
+  border-radius: 50%;
+
+  box-shadow: 0 0 12px rgba(166, 77, 255, 0.8);
+}
+
+
+/* ------------------------------------------------------------
+   DESIGN TOKEN DISPLAY
+   ------------------------------------------------------------ */
+
+.cpg-token-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+
+.cpg-token {
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.02);
+
+  border: 1px solid var(--cpg-border);
+  border-radius: 10px;
+}
+
+
+.cpg-token__swatch {
+  display: block;
+
+  width: 100%;
+  height: 72px;
+
+  border-bottom: 1px solid var(--cpg-border);
+}
+
+
+.cpg-token__swatch--black {
+  background: #000000;
+}
+
+
+.cpg-token__swatch--surface {
+  background: #0b0b0d;
+}
+
+
+.cpg-token__swatch--purple {
+  background: #8a2be2;
+}
+
+
+.cpg-token__swatch--purple-light {
+  background: #a64dff;
+}
+
+
+.cpg-token > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  padding: 14px;
+}
+
+
+.cpg-token code {
+  color: var(--cpg-white);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 0.72rem;
+}
+
+
+.cpg-token > div > span {
+  color: var(--cpg-muted);
+
+  font-size: 0.7rem;
+}
+
+
+/* ------------------------------------------------------------
+   TYPOGRAPHY PROOF
+   ------------------------------------------------------------ */
+
+.cpg-type-proof {
+  display: grid;
+  grid-template-columns: minmax(200px, 0.65fr) 1.35fr;
+  gap: 40px;
+
+  align-items: center;
+
+  margin-top: 12px;
+  padding: 28px;
+
+  background: rgba(255, 255, 255, 0.02);
+
+  border: 1px solid var(--cpg-border);
+  border-radius: 10px;
+}
+
+
+.cpg-type-proof__label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--cpg-muted);
+
+  font-size: 0.68rem;
+  font-weight: var(--weight-bold);
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+
+.cpg-type-proof strong {
+  display: block;
+
+  font-family: var(--font-ui);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: -0.04em;
+}
+
+
+.cpg-type-proof p {
+  margin: 0;
+
+  color: var(--cpg-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+
+/* ------------------------------------------------------------
+   RESPONSIVE EVIDENCE PANEL
+   ------------------------------------------------------------ */
+
+@media (max-width: 900px) {
+
+  .cpg-evidence-header {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .cpg-evidence-index {
+    font-size: 2.5rem;
+  }
+
+  .cpg-evidence-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .cpg-token-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .cpg-evidence-panel {
+    padding: 28px 22px;
+    border-radius: 12px;
+  }
+
+  .cpg-evidence-panel::before {
+    left: 22px;
+  }
+
+  .cpg-evidence-heading h2 {
+    font-size: 2rem;
+  }
+
+  .cpg-evidence-proof__header {
+    flex-direction: column;
+  }
+
+  .cpg-token-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cpg-type-proof {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+}
+
+}
+
+/* ============================================================
+   INSIDE CPG — EXPERIENCE CARDS
+   ============================================================ */
+
+   .cpg-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  
+  .cpg-experience-card {
+    position: relative;
+    min-height: 180px;
+    padding: 24px;
+  
+    background:
+      linear-gradient(
+        145deg,
+        rgba(138, 43, 226, 0.06),
+        rgba(255, 255, 255, 0.015)
+      );
+  
+    border: 1px solid var(--cpg-border);
+    border-radius: var(--cpg-radius);
+  
+    transition:
+      transform var(--cpg-transition),
+      border-color var(--cpg-transition);
+  }
+  
+  .cpg-experience-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--cpg-purple-border);
+  }
+  
+  .cpg-experience-card__number {
+    display: block;
+    margin-bottom: 18px;
+  
+    color: var(--cpg-purple-light);
+  
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: var(--weight-semibold);
+  
+    letter-spacing: 0.14em;
+  }
+  
+  .cpg-experience-card h3 {
+    margin: 0 0 10px;
+  
+    color: var(--cpg-white);
+  
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    font-weight: var(--weight-semibold);
+  }
+  
+  .cpg-experience-card p {
+    margin: 0;
+  
+    color: var(--cpg-muted);
+  
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 760px) {
+    .cpg-experience-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .cpg-experience-card {
+      min-height: 0;
+    }
+  }
+
+  /* ============================================================
+   INSIDE CPG — LIVE DESIGN SYSTEM
+   ============================================================ */
+
+.cpg-live-system {
+  display: grid;
+  gap: 36px;
+}
+
+.cpg-live-system__group {
+  padding-top: 28px;
+  border-top: 1px solid var(--cpg-border);
+}
+
+.cpg-live-system__label {
+  margin: 0 0 18px;
+
+  color: var(--cpg-muted);
+
+  font-size: 0.75rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+
+/* COLOR SYSTEM */
+
+.cpg-live-colors {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.cpg-live-color {
+  display: grid;
+  gap: 7px;
+}
+
+.cpg-live-color__swatch {
+  width: 100%;
+  height: 72px;
+
+  border: 1px solid var(--cpg-border);
+  border-radius: 8px;
+}
+
+.cpg-live-color__swatch--black {
+  background: var(--cpg-black);
+}
+
+.cpg-live-color__swatch--surface {
+  background: var(--cpg-surface);
+}
+
+.cpg-live-color__swatch--purple {
+  background: var(--cpg-purple);
+}
+
+.cpg-live-color__swatch--purple-light {
+  background: var(--cpg-purple-light);
+}
+
+.cpg-live-color > span:not(.cpg-live-color__swatch) {
+  color: var(--cpg-white);
+
+  font-size: 0.9rem;
+  font-weight: var(--weight-semibold);
+}
+
+.cpg-live-color code {
+  color: var(--cpg-muted);
+  font-size: 0.75rem;
+}
+
+
+/* TYPOGRAPHY */
+
+.cpg-live-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.cpg-live-type > div {
+  padding: 24px;
+
+  background: var(--cpg-black);
+
+  border: 1px solid var(--cpg-border);
+  border-radius: var(--cpg-radius);
+}
+
+.cpg-live-type span {
+  display: block;
+  margin-bottom: 12px;
+
+  color: var(--cpg-muted);
+
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cpg-live-type__display strong {
+  display: block;
+
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.cpg-live-type__interface strong {
+  display: block;
+  margin-bottom: 12px;
+
+  font-family: var(--font-ui);
+  font-size: 1.7rem;
+  font-weight: var(--weight-semibold);
+}
+
+.cpg-live-type__interface p {
+  margin: 0;
+
+  color: var(--cpg-muted);
+
+  font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE SYSTEM */
+
+.cpg-breakpoint-demo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+
+  align-items: end;
+}
+
+.cpg-breakpoint {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+
+  color: var(--cpg-muted);
+
+  font-size: 0.8rem;
+}
+
+.cpg-breakpoint strong {
+  color: var(--cpg-white);
+
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+.cpg-breakpoint__screen {
+  display: grid;
+  gap: 5px;
+
+  width: 100%;
+  height: 90px;
+  padding: 10px;
+
+  background: var(--cpg-black);
+
+  border: 1px solid var(--cpg-border);
+  border-radius: 7px;
+}
+
+.cpg-breakpoint__screen i {
+  display: block;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(138, 43, 226, 0.22),
+      rgba(138, 43, 226, 0.06)
+    );
+
+  border: 1px solid var(--cpg-purple-border);
+  border-radius: 4px;
+}
+
+.cpg-breakpoint--desktop .cpg-breakpoint__screen {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cpg-breakpoint--tablet .cpg-breakpoint__screen {
+  width: 75%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cpg-breakpoint--mobile .cpg-breakpoint__screen {
+  width: 42%;
+  grid-template-columns: 1fr;
+}
+
+
+/* IMPLEMENTATION */
+
+.cpg-live-system__implementation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding: 18px 22px;
+
+  background: var(--cpg-black);
+
+  border: 1px solid var(--cpg-border);
+  border-radius: 8px;
+}
+
+.cpg-live-system__implementation > span {
+  color: var(--cpg-muted);
+
+  font-size: 0.75rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cpg-live-system__implementation code {
+  color: var(--cpg-purple-light);
+
+  font-size: 0.78rem;
+  white-space: pre-line;
+}
+
+
+/* LIVE SYSTEM RESPONSIVE */
+
+@media (max-width: 760px) {
+
+  .cpg-live-colors {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cpg-live-type {
+    grid-template-columns: 1fr;
+  }
+
+  .cpg-breakpoint-demo {
+    grid-template-columns: 1fr;
+  }
+
+  .cpg-breakpoint--tablet .cpg-breakpoint__screen,
+  .cpg-breakpoint--mobile .cpg-breakpoint__screen {
+    width: 100%;
+  }
+
+  .cpg-live-system__implementation {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

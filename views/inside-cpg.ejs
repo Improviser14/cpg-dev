@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <%- include('partials/head', {
+    title: 'Inside CPG | How CPG.dev Is Built, Measured & Optimized',
+    description: 'Explore how CPG.dev is designed, built, measured and continuously optimized for performance, accessibility, analytics, search visibility and AI discovery.',
+    canonical: 'https://cpg.dev/inside-cpg'
+  }) %>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <%- include('partials/header') %>
+
+  <main id="main-content">
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section class="cpg-hero cpg-inside-hero">
+
+      <div class="cpg-container">
+
+        <p class="cpg-hero__eyebrow">
+          Inside CPG
+        </p>
+
+        <h1 class="cpg-hero__title">
+          This Site Is the Case Study
+        </h1>
+
+        <p class="cpg-hero__description">
+          CPG.dev isn't just where we describe our approach.
+          It's where we demonstrate it.
+        </p>
+
+        <p class="cpg-inside-hero__intro">
+          Explore the architecture, design system, measurement,
+          performance and optimization decisions behind the site
+          you're using right now.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SYSTEM OVERVIEW
+    ========================================================== -->
+
+    <section
+      class="cpg-section cpg-inside-system"
+      aria-labelledby="inside-system-heading"
+    >
+
+      <div class="cpg-container">
+
+        <p class="cpg-section__eyebrow">
+          Under the Hood
+        </p>
+
+        <h2 id="inside-system-heading">
+          One Digital System. Multiple Layers.
+        </h2>
+
+        <p class="cpg-section__intro">
+          Every layer of CPG.dev has a job—from how pages are rendered
+          to how performance is measured and how people and AI systems
+          discover the content.
+        </p>
+
+
+        <div
+          class="cpg-system-map"
+          aria-label="CPG.dev digital system architecture"
+        >
+
+          <div class="cpg-system-node">
+            <span class="cpg-system-node__number">01</span>
+            <strong>Experience</strong>
+            <span>Interface &amp; UX</span>
+          </div>
+
+          <span class="cpg-system-map__connector" aria-hidden="true">
+            →
+          </span>
+
+          <div class="cpg-system-node">
+            <span class="cpg-system-node__number">02</span>
+            <strong>Architecture</strong>
+            <span>Express &amp; EJS</span>
+          </div>
+
+          <span class="cpg-system-map__connector" aria-hidden="true">
+            →
+          </span>
+
+          <div class="cpg-system-node">
+            <span class="cpg-system-node__number">03</span>
+            <strong>Performance</strong>
+            <span>Delivery &amp; Speed</span>
+          </div>
+
+          <span class="cpg-system-map__connector" aria-hidden="true">
+            →
+          </span>
+
+          <div class="cpg-system-node">
+            <span class="cpg-system-node__number">04</span>
+            <strong>Measurement</strong>
+            <span>Analytics &amp; Signals</span>
+          </div>
+
+          <span class="cpg-system-map__connector" aria-hidden="true">
+            →
+          </span>
+
+          <div class="cpg-system-node">
+            <span class="cpg-system-node__number">05</span>
+            <strong>Discovery</strong>
+            <span>Search &amp; AI</span>
+          </div>
+
+          <span class="cpg-system-map__connector" aria-hidden="true">
+            →
+          </span>
+
+          <div class="cpg-system-node">
+            <span class="cpg-system-node__number">06</span>
+            <strong>Optimization</strong>
+            <span>Measure &amp; Improve</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         EXPERIENCE
+    ========================================================== -->
+
+    <section
+      id="experience"
+      class="cpg-section cpg-inside-evidence"
+      aria-labelledby="experience-heading"
+    >
+
+      <div class="cpg-container">
+
+        <div class="cpg-evidence-panel">
+
+
+          <!-- EXPERIENCE HEADER -->
+
+          <header class="cpg-evidence-header">
+
+            <div class="cpg-evidence-index" aria-hidden="true">
+              01
+            </div>
+
+            <div class="cpg-evidence-heading">
+
+              <p class="cpg-evidence-label">
+                Experience
+              </p>
+
+              <h2 id="experience-heading">
+                Designed as a System,<br>
+                Not a Collection of Pages.
+              </h2>
+
+              <p>
+                The interface you're using is built from a shared visual
+                language—typography, spacing, color, components and responsive
+                behavior designed to work together across the entire experience.
+              </p>
+
+            </div>
+
+          </header>
+
+
+          <!-- WHAT YOU'RE SEEING -->
+
+          <div class="cpg-evidence-grid">
+
+            <div class="cpg-evidence-column">
+
+              <p class="cpg-evidence-column__label">
+                What You're Seeing
+              </p>
+
+              <div class="cpg-experience-grid">
+
+                <article class="cpg-experience-card">
+
+                  <span class="cpg-experience-card__number">
+                    01
+                  </span>
+
+                  <div>
+                    <h3>Design Tokens</h3>
+
+                    <p>
+                      Shared variables control color, typography,
+                      spacing and interface behavior.
+                    </p>
+                  </div>
+
+                </article>
+
+
+                <article class="cpg-experience-card">
+
+                  <span class="cpg-experience-card__number">
+                    02
+                  </span>
+
+                  <div>
+                    <h3>Responsive Layout</h3>
+
+                    <p>
+                      The interface adapts intentionally across
+                      desktop, tablet and mobile.
+                    </p>
+                  </div>
+
+                </article>
+
+
+                <article class="cpg-experience-card">
+
+                  <span class="cpg-experience-card__number">
+                    03
+                  </span>
+
+                  <div>
+                    <h3>Reusable Components</h3>
+
+                    <p>
+                      Shared patterns reduce duplication and keep
+                      the experience visually consistent.
+                    </p>
+                  </div>
+
+                </article>
+
+
+                <article class="cpg-experience-card">
+
+                  <span class="cpg-experience-card__number">
+                    04
+                  </span>
+
+                  <div>
+                    <h3>Accessible Interaction</h3>
+
+                    <p>
+                      Semantic structure, keyboard focus states and
+                      reduced-motion support are built into the system.
+                    </p>
+                  </div>
+
+                </article>
+
+              </div>
+
+            </div>
+
+
+            <!-- WHY IT MATTERS -->
+
+            <aside
+              class="cpg-evidence-impact"
+              aria-labelledby="experience-impact-heading"
+            >
+
+              <p class="cpg-evidence-column__label">
+                Why It Matters
+              </p>
+
+              <h3 id="experience-impact-heading">
+                Better UX is also better operations.
+              </h3>
+
+              <p>
+                A coherent design system makes the experience easier
+                for visitors to understand while making the site easier
+                to maintain, extend and optimize.
+              </p>
+
+              <ul class="cpg-impact-list">
+
+                <li>
+                  <span aria-hidden="true">→</span>
+                  Greater interface consistency
+                </li>
+
+                <li>
+                  <span aria-hidden="true">→</span>
+                  Faster iteration
+                </li>
+
+                <li>
+                  <span aria-hidden="true">→</span>
+                  Lower maintenance overhead
+                </li>
+
+                <li>
+                  <span aria-hidden="true">→</span>
+                  Better accessibility
+                </li>
+
+                <li>
+                  <span aria-hidden="true">→</span>
+                  More predictable user behavior
+                </li>
+
+              </ul>
+
+            </aside>
+
+          </div>
+
+
+          <!-- =====================================================
+               LIVE EVIDENCE
+          ====================================================== -->
+
+          <div class="cpg-evidence-proof">
+
+            <div class="cpg-evidence-proof__header">
+
+              <div>
+
+                <p class="cpg-evidence-column__label">
+                  Live Evidence
+                </p>
+
+                <h3>
+                  The design system powering this page.
+                </h3>
+
+              </div>
+
+              <span class="cpg-live-indicator">
+
+                <span
+                  class="cpg-live-indicator__dot"
+                  aria-hidden="true"
+                ></span>
+
+                From CPG.dev
+
+              </span>
+
+            </div>
+
+
+            <div class="cpg-live-system">
+
+
+              <!-- COLOR SYSTEM -->
+
+              <div class="cpg-live-system__group">
+
+                <p class="cpg-live-system__label">
+                  Color System
+                </p>
+
+                <div class="cpg-live-colors">
+
+                  <div class="cpg-live-color">
+
+                    <span
+                      class="cpg-live-color__swatch
+                      cpg-live-color__swatch--black"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span>Black</span>
+                    <code>#000000</code>
+
+                  </div>
+
+
+                  <div class="cpg-live-color">
+
+                    <span
+                      class="cpg-live-color__swatch
+                      cpg-live-color__swatch--surface"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span>Surface</span>
+                    <code>#0b0b0d</code>
+
+                  </div>
+
+
+                  <div class="cpg-live-color">
+
+                    <span
+                      class="cpg-live-color__swatch
+                      cpg-live-color__swatch--purple"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span>Purple</span>
+                    <code>#8a2be2</code>
+
+                  </div>
+
+
+                  <div class="cpg-live-color">
+
+                    <span
+                      class="cpg-live-color__swatch
+                      cpg-live-color__swatch--purple-light"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span>Highlight</span>
+                    <code>#a64dff</code>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- TYPOGRAPHY -->
+
+              <div class="cpg-live-system__group">
+
+                <p class="cpg-live-system__label">
+                  Typography
+                </p>
+
+                <div class="cpg-live-type">
+
+                  <div class="cpg-live-type__display">
+
+                    <span>Display Typeface</span>
+
+                    <strong>
+                      Occupied
+                    </strong>
+
+                    <p>
+                      Used selectively for high-impact statements
+                      and brand expression.
+                    </p>
+
+                  </div>
+
+
+                  <div class="cpg-live-type__interface">
+
+                    <span>Interface Typeface</span>
+
+                    <strong>
+                      Manrope
+                    </strong>
+
+                    <p>
+                      Used throughout navigation, content and interface
+                      elements for clarity and readability.
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- RESPONSIVE SYSTEM -->
+
+              <div class="cpg-live-system__group">
+
+                <p class="cpg-live-system__label">
+                  Responsive System
+                </p>
+
+                <div class="cpg-breakpoint-demo">
+
+
+                  <div class="cpg-breakpoint cpg-breakpoint--desktop">
+
+                    <span
+                      class="cpg-breakpoint__screen"
+                      aria-hidden="true"
+                    >
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                    </span>
+
+                    <strong>Desktop</strong>
+
+                    <span>
+                      Multi-column
+                    </span>
+
+                  </div>
+
+
+                  <div class="cpg-breakpoint cpg-breakpoint--tablet">
+
+                    <span
+                      class="cpg-breakpoint__screen"
+                      aria-hidden="true"
+                    >
+                      <i></i>
+                      <i></i>
+                    </span>
+
+                    <strong>Tablet</strong>
+
+                    <span>
+                      Adaptive
+                    </span>
+
+                  </div>
+
+
+                  <div class="cpg-breakpoint cpg-breakpoint--mobile">
+
+                    <span
+                      class="cpg-breakpoint__screen"
+                      aria-hidden="true"
+                    >
+                      <i></i>
+                    </span>
+
+                    <strong>Mobile</strong>
+
+                    <span>
+                      Single-column
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- IMPLEMENTATION -->
+
+              <div class="cpg-live-system__implementation">
+
+                <div>
+
+                  <span class="cpg-live-system__label">
+                    Implementation
+                  </span>
+
+                  <p>
+                    A small sample of the shared variables behind
+                    the interface.
+                  </p>
+
+                </div>
+
+                <code>--cpg-purple: #8a2be2;
+--font-ui: "Manrope";
+--cpg-max-width: 1200px;</code>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         PRINCIPLE
+    ========================================================== -->
+
+    <section
+      class="cpg-section cpg-inside-principle"
+      aria-labelledby="inside-principle-heading"
+    >
+
+      <div class="cpg-container">
+
+        <div class="cpg-inside-principle__content">
+
+          <p class="cpg-section__eyebrow">
+            The Principle
+          </p>
+
+          <h2 id="inside-principle-heading">
+            Don't Just Claim It.<br>
+            Demonstrate It.
+          </h2>
+
+          <p>
+            A company offering digital intelligence, optimization and
+            development should be willing to show how its own digital
+            experience works. That's what Inside CPG is for.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <%- include('partials/footer') %>
+
+</body>
+
+</html>
