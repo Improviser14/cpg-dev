@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
   <%- include('partials/head', {
-    title: 'Inside CPG | How CPG.dev Is Built, Measured & Optimized',
-    description: 'Explore how CPG.dev is designed, built, measured and continuously optimized for performance, accessibility, analytics, search visibility and AI discovery.',
+    title: 'Inside CPG | Strategy, Technology & Digital Performance',
+    description: 'See how CPG.dev connects experience, technology, accessibility, search, AI visibility and measurement to measurable digital performance.',
     canonical: 'https://cpg.dev/inside-cpg'
   }) %>
+
+  <link rel="stylesheet" href="/stylesheets/inside-cpg.css">
 </head>
 
 <body>
@@ -25,28 +26,45 @@
          HERO
     ========================================================== -->
 
-    <section class="cpg-hero cpg-inside-hero">
+    <section class="cpg-inside-hero">
 
       <div class="cpg-container">
 
-        <p class="cpg-hero__eyebrow">
+        <p class="cpg-inside-eyebrow">
           Inside CPG
         </p>
 
-        <h1 class="cpg-hero__title">
-          This Site Is the Case Study
+        <h1>
+          This Site Is the Case Study.
         </h1>
 
-        <p class="cpg-hero__description">
-          CPG.dev isn't just where we describe our approach.
-          It's where we demonstrate it.
+        <p class="cpg-inside-hero__lead">
+          CPG.dev is built around the same principles we bring to
+          client work: better experiences, stronger performance,
+          measurable intelligence, and visibility across search and AI.
         </p>
 
-        <p class="cpg-inside-hero__intro">
-          Explore the architecture, design system, measurement,
-          performance and optimization decisions behind the site
-          you're using right now.
+        <p class="cpg-inside-hero__support">
+          The technology matters. What it does for the business matters more.
         </p>
+
+        <div class="cpg-inside-actions">
+
+          <a
+            class="cpg-button cpg-button--primary"
+            href="/digital-performance-audit"
+          >
+            Start With an Audit
+          </a>
+
+          <a
+            class="cpg-inside-text-link"
+            href="/contact?service=general"
+          >
+            Talk to CPG →
+          </a>
+
+        </div>
 
       </div>
 
@@ -58,87 +76,126 @@
     ========================================================== -->
 
     <section
-      class="cpg-section cpg-inside-system"
-      aria-labelledby="inside-system-heading"
+      class="cpg-inside-system"
+      aria-labelledby="system-heading"
     >
 
       <div class="cpg-container">
 
-        <p class="cpg-section__eyebrow">
-          Under the Hood
-        </p>
+        <div class="cpg-inside-section-intro">
 
-        <h2 id="inside-system-heading">
-          One Digital System. Multiple Layers.
-        </h2>
+          <div>
 
-        <p class="cpg-section__intro">
-          Every layer of CPG.dev has a job—from how pages are rendered
-          to how performance is measured and how people and AI systems
-          discover the content.
-        </p>
+            <p class="cpg-inside-eyebrow">
+              The System
+            </p>
 
+            <h2 id="system-heading">
+              Six Disciplines.<br>
+              One Business Goal.
+            </h2>
 
-        <div
-          class="cpg-system-map"
-          aria-label="CPG.dev digital system architecture"
-        >
-
-          <div class="cpg-system-node">
-            <span class="cpg-system-node__number">01</span>
-            <strong>Experience</strong>
-            <span>Interface &amp; UX</span>
           </div>
 
-          <span class="cpg-system-map__connector" aria-hidden="true">
-            →
-          </span>
+          <p>
+            Digital performance comes from disciplines working together.
+            We connect the experience people use with the technology,
+            discoverability and intelligence behind it.
+          </p>
 
-          <div class="cpg-system-node">
-            <span class="cpg-system-node__number">02</span>
-            <strong>Architecture</strong>
-            <span>Express &amp; EJS</span>
-          </div>
+        </div>
 
-          <span class="cpg-system-map__connector" aria-hidden="true">
-            →
-          </span>
 
-          <div class="cpg-system-node">
-            <span class="cpg-system-node__number">03</span>
-            <strong>Performance</strong>
-            <span>Delivery &amp; Speed</span>
-          </div>
+        <div class="cpg-inside-discipline-grid">
 
-          <span class="cpg-system-map__connector" aria-hidden="true">
-            →
-          </span>
+          <a href="#build" class="cpg-inside-discipline">
 
-          <div class="cpg-system-node">
-            <span class="cpg-system-node__number">04</span>
-            <strong>Measurement</strong>
-            <span>Analytics &amp; Signals</span>
-          </div>
+            <span>01</span>
 
-          <span class="cpg-system-map__connector" aria-hidden="true">
-            →
-          </span>
+            <strong>
+              Experience
+            </strong>
 
-          <div class="cpg-system-node">
-            <span class="cpg-system-node__number">05</span>
-            <strong>Discovery</strong>
-            <span>Search &amp; AI</span>
-          </div>
+            <small>
+              Easier to use
+            </small>
 
-          <span class="cpg-system-map__connector" aria-hidden="true">
-            →
-          </span>
+          </a>
 
-          <div class="cpg-system-node">
-            <span class="cpg-system-node__number">06</span>
-            <strong>Optimization</strong>
-            <span>Measure &amp; Improve</span>
-          </div>
+
+          <a href="#build" class="cpg-inside-discipline">
+
+            <span>02</span>
+
+            <strong>
+              Architecture
+            </strong>
+
+            <small>
+              Easier to maintain
+            </small>
+
+          </a>
+
+
+          <a href="#build" class="cpg-inside-discipline">
+
+            <span>03</span>
+
+            <strong>
+              Performance
+            </strong>
+
+            <small>
+              Faster delivery
+            </small>
+
+          </a>
+
+
+          <a href="#discover" class="cpg-inside-discipline">
+
+            <span>04</span>
+
+            <strong>
+              Accessibility
+            </strong>
+
+            <small>
+              Designed for more people
+            </small>
+
+          </a>
+
+
+          <a href="#discover" class="cpg-inside-discipline">
+
+            <span>05</span>
+
+            <strong>
+              SEO + GEO
+            </strong>
+
+            <small>
+              Easier to discover
+            </small>
+
+          </a>
+
+
+          <a href="#measure" class="cpg-inside-discipline">
+
+            <span>06</span>
+
+            <strong>
+              Intelligence
+            </strong>
+
+            <small>
+              Evidence for decisions
+            </small>
+
+          </a>
 
         </div>
 
@@ -148,442 +205,829 @@
 
 
     <!-- =========================================================
-         EXPERIENCE
+         01 BUILD
     ========================================================== -->
 
     <section
-      id="experience"
-      class="cpg-section cpg-inside-evidence"
-      aria-labelledby="experience-heading"
+      id="build"
+      class="cpg-inside-pillar"
+      aria-labelledby="build-heading"
     >
 
       <div class="cpg-container">
 
-        <div class="cpg-evidence-panel">
 
+        <header class="cpg-inside-pillar__header">
 
-          <!-- EXPERIENCE HEADER -->
+          <div class="cpg-inside-pillar__index">
 
-          <header class="cpg-evidence-header">
-
-            <div class="cpg-evidence-index" aria-hidden="true">
-              01
-            </div>
-
-            <div class="cpg-evidence-heading">
-
-              <p class="cpg-evidence-label">
-                Experience
-              </p>
-
-              <h2 id="experience-heading">
-                Designed as a System,<br>
-                Not a Collection of Pages.
-              </h2>
-
-              <p>
-                The interface you're using is built from a shared visual
-                language—typography, spacing, color, components and responsive
-                behavior designed to work together across the entire experience.
-              </p>
-
-            </div>
-
-          </header>
-
-
-          <!-- WHAT YOU'RE SEEING -->
-
-          <div class="cpg-evidence-grid">
-
-            <div class="cpg-evidence-column">
-
-              <p class="cpg-evidence-column__label">
-                What You're Seeing
-              </p>
-
-              <div class="cpg-experience-grid">
-
-                <article class="cpg-experience-card">
-
-                  <span class="cpg-experience-card__number">
-                    01
-                  </span>
-
-                  <div>
-                    <h3>Design Tokens</h3>
-
-                    <p>
-                      Shared variables control color, typography,
-                      spacing and interface behavior.
-                    </p>
-                  </div>
-
-                </article>
-
-
-                <article class="cpg-experience-card">
-
-                  <span class="cpg-experience-card__number">
-                    02
-                  </span>
-
-                  <div>
-                    <h3>Responsive Layout</h3>
-
-                    <p>
-                      The interface adapts intentionally across
-                      desktop, tablet and mobile.
-                    </p>
-                  </div>
-
-                </article>
-
-
-                <article class="cpg-experience-card">
-
-                  <span class="cpg-experience-card__number">
-                    03
-                  </span>
-
-                  <div>
-                    <h3>Reusable Components</h3>
-
-                    <p>
-                      Shared patterns reduce duplication and keep
-                      the experience visually consistent.
-                    </p>
-                  </div>
-
-                </article>
-
-
-                <article class="cpg-experience-card">
-
-                  <span class="cpg-experience-card__number">
-                    04
-                  </span>
-
-                  <div>
-                    <h3>Accessible Interaction</h3>
-
-                    <p>
-                      Semantic structure, keyboard focus states and
-                      reduced-motion support are built into the system.
-                    </p>
-                  </div>
-
-                </article>
-
-              </div>
-
-            </div>
-
-
-            <!-- WHY IT MATTERS -->
-
-            <aside
-              class="cpg-evidence-impact"
-              aria-labelledby="experience-impact-heading"
-            >
-
-              <p class="cpg-evidence-column__label">
-                Why It Matters
-              </p>
-
-              <h3 id="experience-impact-heading">
-                Better UX is also better operations.
-              </h3>
-
-              <p>
-                A coherent design system makes the experience easier
-                for visitors to understand while making the site easier
-                to maintain, extend and optimize.
-              </p>
-
-              <ul class="cpg-impact-list">
-
-                <li>
-                  <span aria-hidden="true">→</span>
-                  Greater interface consistency
-                </li>
-
-                <li>
-                  <span aria-hidden="true">→</span>
-                  Faster iteration
-                </li>
-
-                <li>
-                  <span aria-hidden="true">→</span>
-                  Lower maintenance overhead
-                </li>
-
-                <li>
-                  <span aria-hidden="true">→</span>
-                  Better accessibility
-                </li>
-
-                <li>
-                  <span aria-hidden="true">→</span>
-                  More predictable user behavior
-                </li>
-
-              </ul>
-
-            </aside>
+            <span>01</span>
+            <strong>Build</strong>
 
           </div>
 
 
-          <!-- =====================================================
-               LIVE EVIDENCE
-          ====================================================== -->
+          <div class="cpg-inside-pillar__title">
 
-          <div class="cpg-evidence-proof">
+            <p class="cpg-inside-eyebrow">
+              Experience • Architecture • Performance
+            </p>
 
-            <div class="cpg-evidence-proof__header">
+            <h2 id="build-heading">
+              Better Experiences Start Below the Surface.
+            </h2>
+
+          </div>
+
+        </header>
+
+
+        <div class="cpg-inside-value-grid">
+
+
+          <div class="cpg-inside-value">
+
+            <p class="cpg-inside-label">
+              What We Do
+            </p>
+
+            <p class="cpg-inside-value__statement">
+              We connect UX, development and performance instead of
+              treating them as separate problems.
+            </p>
+
+          </div>
+
+
+          <div class="cpg-inside-value">
+
+            <p class="cpg-inside-label">
+              Why It Matters
+            </p>
+
+            <p class="cpg-inside-value__statement">
+              Better technology creates better customer journeys and
+              makes the platform easier to change as the business evolves.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="cpg-inside-outcomes">
+
+          <span>Better customer journeys</span>
+          <span>Faster releases</span>
+          <span>Lower technical debt</span>
+          <span>Stronger performance</span>
+
+        </div>
+
+
+        <!-- TECHNICAL PROOF -->
+
+        <details class="cpg-technical-proof">
+
+          <summary>
+
+            <span>
+              View Technical Evidence
+            </span>
+
+            <span
+              class="cpg-technical-proof__icon"
+              aria-hidden="true"
+            >
+              +
+            </span>
+
+          </summary>
+
+
+          <div class="cpg-technical-proof__content">
+
+            <div class="cpg-technical-proof__intro">
 
               <div>
 
-                <p class="cpg-evidence-column__label">
-                  Live Evidence
+                <p class="cpg-inside-label">
+                  Architecture
                 </p>
 
                 <h3>
-                  The design system powering this page.
+                  Lightweight. Server-rendered. Maintainable.
                 </h3>
 
               </div>
 
-              <span class="cpg-live-indicator">
-
-                <span
-                  class="cpg-live-indicator__dot"
-                  aria-hidden="true"
-                ></span>
-
-                From CPG.dev
-
-              </span>
+              <p>
+                CPG.dev uses Node.js, Express and EJS with reusable
+                components and shared presentation patterns.
+              </p>
 
             </div>
 
 
-            <div class="cpg-live-system">
+            <div class="cpg-technical-grid">
 
 
-              <!-- COLOR SYSTEM -->
+              <div class="cpg-technical-card">
 
-              <div class="cpg-live-system__group">
+                <span>01</span>
 
-                <p class="cpg-live-system__label">
-                  Color System
-                </p>
+                <strong>
+                  Node.js
+                </strong>
 
-                <div class="cpg-live-colors">
-
-                  <div class="cpg-live-color">
-
-                    <span
-                      class="cpg-live-color__swatch
-                      cpg-live-color__swatch--black"
-                      aria-hidden="true"
-                    ></span>
-
-                    <span>Black</span>
-                    <code>#000000</code>
-
-                  </div>
-
-
-                  <div class="cpg-live-color">
-
-                    <span
-                      class="cpg-live-color__swatch
-                      cpg-live-color__swatch--surface"
-                      aria-hidden="true"
-                    ></span>
-
-                    <span>Surface</span>
-                    <code>#0b0b0d</code>
-
-                  </div>
-
-
-                  <div class="cpg-live-color">
-
-                    <span
-                      class="cpg-live-color__swatch
-                      cpg-live-color__swatch--purple"
-                      aria-hidden="true"
-                    ></span>
-
-                    <span>Purple</span>
-                    <code>#8a2be2</code>
-
-                  </div>
-
-
-                  <div class="cpg-live-color">
-
-                    <span
-                      class="cpg-live-color__swatch
-                      cpg-live-color__swatch--purple-light"
-                      aria-hidden="true"
-                    ></span>
-
-                    <span>Highlight</span>
-                    <code>#a64dff</code>
-
-                  </div>
-
-                </div>
+                <small>
+                  Application runtime
+                </small>
 
               </div>
 
 
-              <!-- TYPOGRAPHY -->
+              <div class="cpg-technical-card">
 
-              <div class="cpg-live-system__group">
+                <span>02</span>
 
-                <p class="cpg-live-system__label">
-                  Typography
-                </p>
+                <strong>
+                  Express
+                </strong>
 
-                <div class="cpg-live-type">
-
-                  <div class="cpg-live-type__display">
-
-                    <span>Display Typeface</span>
-
-                    <strong>
-                      Occupied
-                    </strong>
-
-                    <p>
-                      Used selectively for high-impact statements
-                      and brand expression.
-                    </p>
-
-                  </div>
-
-
-                  <div class="cpg-live-type__interface">
-
-                    <span>Interface Typeface</span>
-
-                    <strong>
-                      Manrope
-                    </strong>
-
-                    <p>
-                      Used throughout navigation, content and interface
-                      elements for clarity and readability.
-                    </p>
-
-                  </div>
-
-                </div>
+                <small>
+                  Routing and delivery
+                </small>
 
               </div>
 
 
-              <!-- RESPONSIVE SYSTEM -->
+              <div class="cpg-technical-card">
 
-              <div class="cpg-live-system__group">
+                <span>03</span>
 
-                <p class="cpg-live-system__label">
-                  Responsive System
-                </p>
+                <strong>
+                  EJS
+                </strong>
 
-                <div class="cpg-breakpoint-demo">
-
-
-                  <div class="cpg-breakpoint cpg-breakpoint--desktop">
-
-                    <span
-                      class="cpg-breakpoint__screen"
-                      aria-hidden="true"
-                    >
-                      <i></i>
-                      <i></i>
-                      <i></i>
-                    </span>
-
-                    <strong>Desktop</strong>
-
-                    <span>
-                      Multi-column
-                    </span>
-
-                  </div>
-
-
-                  <div class="cpg-breakpoint cpg-breakpoint--tablet">
-
-                    <span
-                      class="cpg-breakpoint__screen"
-                      aria-hidden="true"
-                    >
-                      <i></i>
-                      <i></i>
-                    </span>
-
-                    <strong>Tablet</strong>
-
-                    <span>
-                      Adaptive
-                    </span>
-
-                  </div>
-
-
-                  <div class="cpg-breakpoint cpg-breakpoint--mobile">
-
-                    <span
-                      class="cpg-breakpoint__screen"
-                      aria-hidden="true"
-                    >
-                      <i></i>
-                    </span>
-
-                    <strong>Mobile</strong>
-
-                    <span>
-                      Single-column
-                    </span>
-
-                  </div>
-
-                </div>
+                <small>
+                  Server-rendered templates
+                </small>
 
               </div>
 
 
-              <!-- IMPLEMENTATION -->
+              <div class="cpg-technical-card">
 
-              <div class="cpg-live-system__implementation">
+                <span>04</span>
 
-                <div>
+                <strong>
+                  Shared Components
+                </strong>
 
-                  <span class="cpg-live-system__label">
-                    Implementation
-                  </span>
-
-                  <p>
-                    A small sample of the shared variables behind
-                    the interface.
-                  </p>
-
-                </div>
-
-                <code>--cpg-purple: #8a2be2;
---font-ui: "Manrope";
---cpg-max-width: 1200px;</code>
+                <small>
+                  Consistent UI patterns
+                </small>
 
               </div>
 
             </div>
+
+
+            <div class="cpg-technical-note">
+
+              <strong>
+                Why a technical reviewer should care:
+              </strong>
+
+              <p>
+                The architecture minimizes unnecessary application
+                complexity while keeping routing, templates, components
+                and presentation concerns understandable and maintainable.
+              </p>
+
+            </div>
+
+          </div>
+
+        </details>
+
+
+        <!-- SERVICE CONNECTION -->
+
+        <div class="cpg-inside-service">
+
+          <div>
+
+            <p class="cpg-inside-label">
+              CPG Service
+            </p>
+
+            <h3>
+              Optimization &amp; Development
+            </h3>
+
+            <p>
+              Turn experience and technology problems into practical,
+              measurable improvements.
+            </p>
+
+          </div>
+
+
+          <div class="cpg-inside-service__actions">
+
+            <a
+              href="/services/optimization-development"
+              class="cpg-inside-text-link"
+            >
+              Explore the Service →
+            </a>
+
+            <a
+              href="/contact?service=optimization-development"
+              class="cpg-button cpg-button--primary"
+            >
+              Discuss Your Platform
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         02 DISCOVER
+    ========================================================== -->
+
+    <section
+      id="discover"
+      class="cpg-inside-pillar cpg-inside-pillar--alternate"
+      aria-labelledby="discover-heading"
+    >
+
+      <div class="cpg-container">
+
+
+        <header class="cpg-inside-pillar__header">
+
+          <div class="cpg-inside-pillar__index">
+
+            <span>02</span>
+            <strong>Discover</strong>
+
+          </div>
+
+
+          <div class="cpg-inside-pillar__title">
+
+            <p class="cpg-inside-eyebrow">
+              Accessibility • SEO • AI Visibility
+            </p>
+
+            <h2 id="discover-heading">
+              Being Online Isn't the Same as Being Discoverable.
+            </h2>
+
+          </div>
+
+        </header>
+
+
+        <div class="cpg-inside-value-grid">
+
+
+          <div class="cpg-inside-value">
+
+            <p class="cpg-inside-label">
+              What We Do
+            </p>
+
+            <p class="cpg-inside-value__statement">
+              We strengthen the content, structure and technical signals
+              that help people, search engines and AI systems understand
+              an organization.
+            </p>
+
+          </div>
+
+
+          <div class="cpg-inside-value">
+
+            <p class="cpg-inside-label">
+              Why It Matters
+            </p>
+
+            <p class="cpg-inside-value__statement">
+              Discovery is expanding beyond traditional search.
+              Organizations need to be accessible, understandable
+              and authoritative wherever customers look for answers.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="cpg-inside-outcomes">
+
+          <span>Better accessibility</span>
+          <span>Stronger SEO foundations</span>
+          <span>Clearer entity signals</span>
+          <span>Greater AI discoverability</span>
+
+        </div>
+
+
+        <!-- TECHNICAL PROOF -->
+
+        <details class="cpg-technical-proof">
+
+          <summary>
+
+            <span>
+              View Discovery Evidence
+            </span>
+
+            <span
+              class="cpg-technical-proof__icon"
+              aria-hidden="true"
+            >
+              +
+            </span>
+
+          </summary>
+
+
+          <div class="cpg-technical-proof__content">
+
+            <div class="cpg-technical-proof__intro">
+
+              <div>
+
+                <p class="cpg-inside-label">
+                  Discovery Foundation
+                </p>
+
+                <h3>
+                  Make the organization easier to understand.
+                </h3>
+
+              </div>
+
+              <p>
+                Semantic structure, accessible experiences,
+                crawlable content and clear subject relationships
+                create stronger foundations for search and AI discovery.
+              </p>
+
+            </div>
+
+
+            <div class="cpg-technical-grid">
+
+
+              <div class="cpg-technical-card">
+
+                <span>01</span>
+
+                <strong>
+                  Semantic HTML
+                </strong>
+
+                <small>
+                  Structure and meaning
+                </small>
+
+              </div>
+
+
+              <div class="cpg-technical-card">
+
+                <span>02</span>
+
+                <strong>
+                  Accessibility
+                </strong>
+
+                <small>
+                  Inclusive interaction
+                </small>
+
+              </div>
+
+
+              <div class="cpg-technical-card">
+
+                <span>03</span>
+
+                <strong>
+                  Search
+                </strong>
+
+                <small>
+                  Crawlable discovery
+                </small>
+
+              </div>
+
+
+              <div class="cpg-technical-card">
+
+                <span>04</span>
+
+                <strong>
+                  Entity Clarity
+                </strong>
+
+                <small>
+                  Machine understanding
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <div class="cpg-technical-note">
+
+              <strong>
+                Why a technical reviewer should care:
+              </strong>
+
+              <p>
+                Search visibility, accessibility and AI visibility
+                share important structural foundations. Clean semantic
+                implementation helps both people and machines interpret
+                the experience more reliably.
+              </p>
+
+            </div>
+
+          </div>
+
+        </details>
+
+
+        <!-- SERVICE CONNECTION -->
+
+        <div class="cpg-inside-service">
+
+          <div>
+
+            <p class="cpg-inside-label">
+              CPG Service
+            </p>
+
+            <h3>
+              AI Visibility &amp; GEO
+            </h3>
+
+            <p>
+              Understand how your organization appears across search
+              and AI—and where visibility can be strengthened.
+            </p>
+
+          </div>
+
+
+          <div class="cpg-inside-service__actions">
+
+            <a
+              href="/services/ai-visibility-geo"
+              class="cpg-inside-text-link"
+            >
+              Explore the Service →
+            </a>
+
+            <a
+              href="/contact?service=ai-visibility-geo"
+              class="cpg-button cpg-button--primary"
+            >
+              Assess Your AI Visibility
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         03 MEASURE
+    ========================================================== -->
+
+    <section
+      id="measure"
+      class="cpg-inside-pillar"
+      aria-labelledby="measure-heading"
+    >
+
+      <div class="cpg-container">
+
+
+        <header class="cpg-inside-pillar__header">
+
+          <div class="cpg-inside-pillar__index">
+
+            <span>03</span>
+            <strong>Measure</strong>
+
+          </div>
+
+
+          <div class="cpg-inside-pillar__title">
+
+            <p class="cpg-inside-eyebrow">
+              Analytics • Intent • Outcomes
+            </p>
+
+            <h2 id="measure-heading">
+              Data Should Tell You What to Do Next.
+            </h2>
+
+          </div>
+
+        </header>
+
+
+        <div class="cpg-inside-value-grid">
+
+
+          <div class="cpg-inside-value">
+
+            <p class="cpg-inside-label">
+              What We Do
+            </p>
+
+            <p class="cpg-inside-value__statement">
+              We connect acquisition, engagement and meaningful
+              digital actions to the outcomes the organization
+              actually cares about.
+            </p>
+
+          </div>
+
+
+          <div class="cpg-inside-value">
+
+            <p class="cpg-inside-label">
+              Why It Matters
+            </p>
+
+            <p class="cpg-inside-value__statement">
+              Reporting should help leaders decide where to invest,
+              what to improve and whether those decisions worked.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="cpg-inside-outcomes">
+
+          <span>Understand acquisition</span>
+          <span>Measure intent</span>
+          <span>Identify opportunities</span>
+          <span>Prioritize investment</span>
+
+        </div>
+
+
+        <!-- TECHNICAL PROOF -->
+
+        <details class="cpg-technical-proof">
+
+          <summary>
+
+            <span>
+              View Measurement Evidence
+            </span>
+
+            <span
+              class="cpg-technical-proof__icon"
+              aria-hidden="true"
+            >
+              +
+            </span>
+
+          </summary>
+
+
+          <div class="cpg-technical-proof__content">
+
+            <div class="cpg-technical-proof__intro">
+
+              <div>
+
+                <p class="cpg-inside-label">
+                  Decision Model
+                </p>
+
+                <h3>
+                  Measurement should lead to action.
+                </h3>
+
+              </div>
+
+              <p>
+                Useful measurement follows the customer journey
+                from discovery through engagement and meaningful
+                business outcomes.
+              </p>
+
+            </div>
+
+
+            <div class="cpg-measurement-flow">
+
+              <div>
+                <span>01</span>
+                <strong>Discover</strong>
+                <small>How they arrive</small>
+              </div>
+
+              <div>
+                <span>02</span>
+                <strong>Engage</strong>
+                <small>What they use</small>
+              </div>
+
+              <div>
+                <span>03</span>
+                <strong>Act</strong>
+                <small>What they do</small>
+              </div>
+
+              <div>
+                <span>04</span>
+                <strong>Learn</strong>
+                <small>What it means</small>
+              </div>
+
+              <div>
+                <span>05</span>
+                <strong>Improve</strong>
+                <small>What happens next</small>
+              </div>
+
+            </div>
+
+
+            <div class="cpg-technical-note">
+
+              <strong>
+                Why a technical reviewer should care:
+              </strong>
+
+              <p>
+                Measurement strategy should define meaningful events,
+                acquisition context and outcome signals before those
+                data points are transformed into reporting and
+                decision systems.
+              </p>
+
+            </div>
+
+          </div>
+
+        </details>
+
+
+        <!-- SERVICE CONNECTION -->
+
+        <div class="cpg-inside-service">
+
+          <div>
+
+            <p class="cpg-inside-label">
+              CPG Service
+            </p>
+
+            <h3>
+              Digital Intelligence
+            </h3>
+
+            <p>
+              Turn digital behavior into intelligence leaders
+              can actually use.
+            </p>
+
+          </div>
+
+
+          <div class="cpg-inside-service__actions">
+
+            <a
+              href="/services/digital-intelligence"
+              class="cpg-inside-text-link"
+            >
+              Explore the Service →
+            </a>
+
+            <a
+              href="/contact?service=digital-intelligence"
+              class="cpg-button cpg-button--primary"
+            >
+              Discuss Your Measurement Needs
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         PRINCIPLE / CLOSE
+    ========================================================== -->
+
+    <section class="cpg-inside-principle">
+
+      <div class="cpg-container">
+
+        <p class="cpg-inside-eyebrow">
+          The Principle
+        </p>
+
+        <h2>
+          Don't Just Claim It.<br>
+          Demonstrate It.
+        </h2>
+
+        <p class="cpg-inside-principle__lead">
+          The same disciplines demonstrated throughout CPG.dev
+          are applied to client digital ecosystems.
+        </p>
+
+        <p class="cpg-inside-principle__statement">
+          The goal isn't simply a better website. It's a digital
+          system that's easier to find, easier to use, easier to
+          measure and easier to improve.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FINAL CTA
+    ========================================================== -->
+
+    <section
+      class="cpg-inside-final"
+      aria-labelledby="final-heading"
+    >
+
+      <div class="cpg-container">
+
+        <div class="cpg-inside-final__content">
+
+          <p class="cpg-inside-eyebrow">
+            Not Sure Where to Start?
+          </p>
+
+          <h2 id="final-heading">
+            Start With Evidence.
+          </h2>
+
+          <p>
+            A Digital Performance Audit brings experience,
+            technology, accessibility, search, AI visibility and
+            measurement together into one prioritized view of your
+            biggest opportunities.
+          </p>
+
+          <div class="cpg-inside-actions">
+
+            <a
+              class="cpg-button cpg-button--primary"
+              href="/digital-performance-audit"
+            >
+              Get a Digital Performance Audit
+            </a>
+
+            <a
+              class="cpg-inside-text-link"
+              href="/contact?service=general"
+            >
+              Talk to CPG →
+            </a>
 
           </div>
 
@@ -593,40 +1037,6 @@
 
     </section>
 
-
-    <!-- =========================================================
-         PRINCIPLE
-    ========================================================== -->
-
-    <section
-      class="cpg-section cpg-inside-principle"
-      aria-labelledby="inside-principle-heading"
-    >
-
-      <div class="cpg-container">
-
-        <div class="cpg-inside-principle__content">
-
-          <p class="cpg-section__eyebrow">
-            The Principle
-          </p>
-
-          <h2 id="inside-principle-heading">
-            Don't Just Claim It.<br>
-            Demonstrate It.
-          </h2>
-
-          <p>
-            A company offering digital intelligence, optimization and
-            development should be willing to show how its own digital
-            experience works. That's what Inside CPG is for.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
 
   </main>
 
